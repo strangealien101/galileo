@@ -70,6 +70,74 @@ h1, h2, h3, h4 {
 
 
 }
+
+/* Выпадающее меню */
+
+.menu_open {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--Aragorn);
+    padding: 15px;
+    width: 213px;
+    margin-left: -13px;
+    top:50px
+}
+.menu_open::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+}
+
+
+
+.headerBlock_menuNav__list:hover .menu_open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .headerBlock_menuNav__list:hover .menu_openBlock {
+    display: flex;
+  }
+
+.menu_openBlock:not(:last-child) {
+    padding-bottom: 20px;
+}
+/*
+.menu_openBlock::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: white;
+} */
+.menu_openBlock {
+    display: none;
+    flex-direction: column;
+}
+
+.menu_openBlock__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--Sauron);
+}
+
+.menu_openBlock__link {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--Arven);
+    text-decoration: none;
+}
+
+
 /* Иконки */
 
 .icon-arrowNext:before {
@@ -101,19 +169,33 @@ h1, h2, h3, h4 {
     margin: 0;
 }
 
+.containerBox {
+    padding: 0 70px;
+}
+
+.containerExl {
+    padding: 0 0 0 70px;
+}
+
 .blockContainer {
     margin-bottom: 200px;
     width: 100%;
     max-width: 1724px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .blockContainer_head {
+    padding: 0 70px;
     width: 100%;
     max-width: 1724px;
     display: flex;
     flex-direction: column;
+}
+
+.block {
+    margin-bottom: 30px;
 }
 
 .blockHeader {
@@ -163,6 +245,14 @@ h1, h2, h3, h4 {
     flex-direction: row;
 }
 
+.headerBlock_menuNav__link {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--Arven);
+}
+
 .headerBlock_info__btn {
     padding: 14px 30px;
     margin-right: 40px;
@@ -198,7 +288,11 @@ h1, h2, h3, h4 {
     font-size: 22px;
     line-height: 26.5px;
     color: var(--Arven);
+    display: flex;
+    position: relative;
 }
+
+
 
 .headerBlock_menuNav {
     padding: 0;
@@ -330,7 +424,6 @@ h1, h2, h3, h4 {
 }
 
 .blockInfonumbers_text {
-    margin-bottom: 50px;
     font-size: 30px;
     line-height: 30px;
     color: var(--Gorlum);
@@ -496,6 +589,10 @@ h1, h2, h3, h4 {
     margin-bottom: 50px;
 }
 
+.containerGrid {
+    display: none;
+}
+
 /* Кнопки */
 
 .btnGreen {
@@ -511,7 +608,7 @@ h1, h2, h3, h4 {
 
 .btnBlue{
     width: 445px;
-    height: 96px;
+    height: 72px;
     font-size: 30px;
     line-height: 36px;
     color: var(--Arven);
@@ -541,8 +638,11 @@ h1, h2, h3, h4 {
     box-shadow: 0px 15px 50px 0px rgba(94, 182, 53, 0.5);
 }
 
+.openWnd {
+    display: none;
+}
 
-#cursor {
+.cursor {
     cursor: url(../img/cursor.svg), auto;
     }
 
@@ -590,7 +690,9 @@ h1, h2, h3, h4 {
 }
 
 .blockHelpBlock_btn {
-    width: 500px;
+    margin-right: 20px;
+    max-width: 500px;
+    width: 100%;
     padding: 30px 50px 30px 50px;
     font-size: 30px;
     line-height: 36px;
@@ -615,22 +717,22 @@ h1, h2, h3, h4 {
     text-decoration: none;
 }
 
-
+.blockInfoTechnology_ttl {
+    margin-bottom: 40px;
+    font-size: 44px;
+    line-height: 52px;
+    color: var(--Arven);
+    text-align: center;
+}
 
 /* Списки */
 
-.blockInfoStart_list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .blockInfoTerminal {
     margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
+}
+
+.blockInfoStart_list {
+    padding: 0;
 }
 
 .blockInfoStart_list__box {
@@ -695,12 +797,12 @@ h1, h2, h3, h4 {
 
 .input_text {
     padding-bottom: 20px;
-    width: 845px;
-   font-size: 34px;
-   line-height: 47px;
-   color: var(--Sauron); 
-   background-color: transparent;
-   border: none;
+    width: 100%;
+    font-size: 34px;
+    line-height: 47px;
+    color: var(--Sauron); 
+    background-color: transparent;
+    border: none;
 }
 
 .inputPart {
@@ -724,20 +826,9 @@ h1, h2, h3, h4 {
 
 /* Картинки */
 
-.blockInfoStart_img {
-    max-width: 408px;
-    height: 408px;
-}
-
-.blockContainerBoxing_img {
-    max-width: 851px;
-    height: 669px;
-}
-
 .blockListNew_img {
     margin-bottom: 30px;
     max-width: 407px;
-    height: 405px;
 }
 
 .footerEnd_logo {
@@ -770,6 +861,10 @@ h1, h2, h3, h4 {
 .blockInfoTechnology_img {
     width: 553px;
     height: 553px;
+}
+
+.blockInfonumbers_icon {
+    height: 150px;
 }
 
 
@@ -807,11 +902,6 @@ h1, h2, h3, h4 {
     background-image: url(../img/eco.svg);
 }
 
-.blockInfoTechnology {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .blockInfonumbers_box {
     display: flex;
     flex-direction: column;
@@ -833,18 +923,30 @@ h1, h2, h3, h4 {
 .blockHelpBlock {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .blockHelpBlock_form {
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.blockInfonumbers_boxLtl {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.spl {
+    margin-right: 15px;
 }
 
 .blockHelpBlock_btnBox {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
 .blockList {
@@ -901,6 +1003,7 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center
 }
 
 .footerEndBox {
@@ -927,7 +1030,7 @@ h1, h2, h3, h4 {
 }
 
 .line {
-    background: url(../img/line.svg) no-repeat 100%;
+    background: url(../img/line.svg) no-repeat 40% 80%;
     background-size: contain;
     position: relative;
     align-items: center;
@@ -1054,7 +1157,7 @@ h1, h2, h3, h4 {
     display: flex;
     grid-gap: 1em;
     overflow: hidden;
-    width: 1720px;
+    max-width: 1720px;
     
     & > .inner {
       display: flex;

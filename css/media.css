@@ -1,0 +1,368 @@
+@media (max-width:1825px) {
+    .blockInfoTechnology_img {
+        width: 413px;
+        height: 413px;
+    }
+}
+
+@media (max-width:1695px) {
+    .blockInfonumbers_icon {
+        height: 114px;
+    }
+
+    .blockInfonumbers_text {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .blockInfonumbers_sub {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .blockInfonumbers_note {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+
+
+@media (max-width:1656px) {
+    .blockInfoTechnology_img {
+        width: 413px;
+        height: 413px;
+    }
+
+    .blockInfoTechnology_lisText {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .blockInfoTechnology_list {
+        max-width: 413px;
+        height: 572px;
+    }
+
+    .title {
+        font-size: 60px;
+        line-height: 72px;
+    }
+
+    .blockInfoStart_title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}
+
+@media (max-width:1643px) {
+    .blockInfoTechnology_title {
+        font-size: 80px;
+        line-height: 88px;
+    }
+
+    .blockInfoTechnology_text {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .titleBottom {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .blockInfoTechnology_btn {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .blockInfoTechnology_block {
+        height: 630px;
+        background-size: 462px 348px;
+    }
+
+    .blockInfonumbers_text {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    .blockInfonumbers_icon {
+        height: 114px;
+    }
+
+    .blockInfonumbers_sub {
+        margin-bottom: 30px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .blockInfonumbers_note {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .btnBigGreen {
+        padding: 24px 0 24px 0;
+    }
+
+    .blockInfoTechnology_ttl {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+}
+
+
+@media (max-width:1628px) {
+    .titleText {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .titleBlue {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .titleColor {
+        margin-bottom: 25px;
+        font-size: 80px;
+        line-height: 88px;
+    }
+
+    .blockInfoTerminal_text {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .blockInfoTechnology_title {
+        font-size: 80px;
+        line-height: 88px;
+    }
+
+    .blockInfoTechnology_textBlue {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .btnBigGreen {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .blockHelpTitle {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .input_text {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .blockHelpBlock_btnBox__text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .blockHelpBlock_btn {
+        max-width: 344px;
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+   
+
+    
+
+}
+
+@media (max-width:1500px) {
+    .btnGreen {
+        font-size: 26px;
+        line-height: 31px;
+        height: 80px;
+    }
+
+    .btnBlue {
+        font-size: 22px;
+        line-height: 26px;
+        height: 60px;
+    }
+
+    .blockListNew_img {
+        max-width: 305px;
+    }
+
+    .blockListNew_title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    
+    .blockListNew_text {
+        font-size: 26px;
+        line-height: 27px;
+    }
+
+    .blockListNew_textSmall {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .blockListNew_titleBlue {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .footerEndText {
+        font-size: 16px;
+        line-height: 19px;
+    }
+  
+}
+
+@media (max-width:1302px) {
+    .titleColor {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .blockInfoTerminal_text {
+        font-size: 25px;
+        line-height: 29px;
+    }
+
+    .btnGreen {
+        font-size: 20px;
+        line-height: 24px;
+        height: 70px;
+    }
+
+    .btnBlue {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width:1175px) {
+    .title {
+        font-size: 50px;
+        line-height: 52px;
+    }
+
+    .titleColor {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    }
+
+@media (max-width:992px) {
+    .openWnd {
+        display: block;
+        width: 100%;
+}
+
+    .clsWnd {
+    display: none;
+}
+
+    .titleText {
+        font-size: 16px;
+        line-height: 19px;
+    }
+   
+
+    .containerGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+}
+
+    .btnBlue {
+        order: 1;
+        margin-top: 25px;
+    }
+
+    .blockInfoTerminal {
+        text-align: center;
+    }
+
+
+
+}
+
+
+@media (max-width:858px) {
+
+    .containerBox {
+        padding: 0 60px;
+    }
+
+    .title {
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    .btnBigGreen {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .titleBlue {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .blockInfoStart_list__box {
+        height: 300px;
+    }
+
+    .blockInfoStart_list__item {
+        height: 300px;
+    }
+
+
+
+
+
+}
+
+@media (max-width:768px) {
+    .blockInfoStart_list__box {
+        height: 151px;
+    }
+
+    .blockInfoStart_list__item {
+        height: 151px;
+    }
+}
+
+
+
+
+@media (max-width:532px) {
+    .containerBox {
+        padding: 0 40px;
+    }
+
+    .blockInfoStart_title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .titleColor {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .blockInfoTerminal_text{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+
+
+}

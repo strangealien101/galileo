@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/10d50fbd9c/UntitledProject/style.css">
 </head>
 <body>
     <div class="greatPage container">
+        
         <!--Header-->
-        <header class="blockHeader">
+        <header class="blockHeader containerBox">
             <div class="col-xxl-12 col-lg-6 col-md-6 blockContainer_head">
                 <div class="headerBlock">
                     <div class="headerBlock_logo">
@@ -40,50 +42,204 @@
                         </div>
                         <div class="headerBlock_menu">
                             <nav>
-                                <ul class="headerBlock_menuNav">
-                                    <li class="headerBlock_menuNav__list"><a>Продукты</a></li>
-                                    <li class="headerBlock_menuNav__list"><a>Отрасли</a></li>
-                                    <li class="headerBlock_menuNav__list"><a>Решения</a></li>
-                                    <li class="headerBlock_menuNav__list"><a>Обучение</a></li>
-                                    <li class="headerBlock_menuNav__list"><a>Поддержка</a></li>
-                                    <li class="headerBlock_menuNav__list"><a>Партнерам</a></li>
-                                    <li class="headerBlock_menuNav__list"><a>О компании</a></li>
+                                <ul class="headerBlock_menuNav cursor">
+                                    <li class="headerBlock_menuNav__list">
+                                        <a id="cursor" class="headerBlock_menuNav__link">Продукты
+                                            <!--Выпадающий список меню-->
+                                            <div class="menu_open">
+                                                <div class="menu_openBlock">
+                                                    <span class="menu_openBlock__title">Устройства</span>
+                                                    <a href="https://galileosky.ru/products/devices/10/" class="menu_openBlock__link">Galileosky 10</a>
+                                                    <a href="https://galileosky.ru/products/base-block-iridium.html" class="menu_openBlock__link">Base Block Iridium</a>
+                                                </div>
+                                                <div class="menu_openBlock"> 
+                                                    <span class="menu_openBlock__title">Технологии</span>
+                                                    <a href="https://galileosky.ru/products/texnologii/can-scanner.html" class="menu_openBlock__link">Can Scanner</a>
+                                                    <a href="https://galileosky.ru/products/texnologii/easylogic.html" class="menu_openBlock__link">Easy Logic</a>
+                                                    <a class="menu_openBlock__link">Hub-to-hub</a>
+                                                    <a href="https://galileosky.ru/products/texnologii/eco-driving.html" class="menu_openBlock__link">Eco Driving</a>
+                                                </div>
+                                                <div class="menu_openBlock">
+                                                    <span class="menu_openBlock__title">Алгоритмы</span>
+                                                    <a href="https://store.galileosky.ru" class="menu_openBlock__link">Маркетплейс</a>
+                                                </div>
+                                                <div class="menu_openBlock">
+                                                    <span class="menu_openBlock__title">Интеграции</span>
+                                                    <a href="https://galileosky.ru/products/integraczii/periferiya.html" class="menu_openBlock__link">Периферия</a>
+                                                    <a href="https://galileosky.ru/products/integraczii/po-monitoringa.html" class="menu_openBlock__link">ПО&nbsp;монтиторинга</a>
+                                                </div>
+                                             </div>
+                                        </a></li>
+                                    <li class="headerBlock_menuNav__list">
+                                        <p>Отрасли</p>
+                                        <!--Выпадающий список меню-->
+                                        <div class="menu_open">
+                                                <a href="https://galileosky.ru/resheniya/gruzoperevozki.html" class="menu_openBlock__link">Транспорт
+                                                    <br>и&nbsp;логистика</br></a>
+                                                <a href="https://galileosky.ru/resheniya/gornaya-dobyicha.html" class="menu_openBlock__link">Горнодобывающая 
+                                                    <br>промышленность</br></a>
+                                                <a href="https://galileosky.ru/resheniya/neft-i-gaz.html" class="menu_openBlock__link">Нефтегазовая 
+                                                    <br>промышленность</br></a>
+                                                <a href="https://galileosky.ru/resheniya/stroitelstvo.html" class="menu_openBlock__link">Строительство</a>
+                                                <a href="https://galileosky.ru/resheniya/lesozagotovka.html" class="menu_openBlock__link">Лесозаготовка</a>
+                                                <a href="https://galileosky.ru/resheniya/selskoe-xozyajstvo.html" class="menu_openBlock__link">Сельское хозяйство</a>
+                                                <a href="https://galileosky.ru/resheniya/karshering-i-taksi.html" class="menu_openBlock__link">Пассажарские <br>перевозки,</br> 
+                                                    каршеринг, такси</a>
+                                                <a href="https://galileosky.ru/resheniya/kommunalnyie-sluzhbyi.html" class="menu_openBlock__link">Коммунальные и&nbsp;<br>экстренные</br> 
+                                                    службы</a>
+                                                <a href="https://galileosky.ru/resheniya/staczionarnyie-obektyi/asu-tp.html" class="menu_openBlock__link">Автоматизация <br>промышленных</br> процессов</a>
+                                         </div>
+                                    </li>
+                                    <li class="headerBlock_menuNav__list"><a id="cursor">Решения
+                                        <!--Выпадающий список меню-->
+                                        <div class="menu_open">
+                                            <div class="menu_openBlock">
+                                                <a href="https://galileosky.ru/resheniya/monitoring-transporta.html" class="menu_openBlock__link">Мониторинг 
+                                                    <br>транспорта</br></a>
+                                                <a href="https://galileosky.ru/resheniya/kontrol-topliva.html" class="menu_openBlock__link">Контроль топлива</a>
+                                                <a href="https://galileosky.ru/resheniya/kontrol-stilya-vozhdeniya.html" class="menu_openBlock__link">Контроль стиля
+                                                    <br>вождения</br></a>
+                                                <a href="https://galileosky.ru/resheniya/kontrol-rezhima-rabotyi.html" class="menu_openBlock__link">Контроль режима
+                                                    <br>работы</br></a>
+                                                <a href="https://galileosky.ru/resheniya/udalennoe-upravlenie.html" class="menu_openBlock__link">Удаленное 
+                                                    <br>управление</br></a>
+                                                <a href="https://galileosky.ru/resheniya/monitoring-vne-seti-gsm.html" class="menu_openBlock__link">Мониторинг 
+                                                    <br>вне сети GSM</br></a>
+                                                <a href="https://galileosky.ru/resheniya/oxrana-i-bezopasnost.html" class="menu_openBlock__link">Охрана
+                                                    <br>и безопасность</br></a>
+                                                <a href="https://galileosky.ru/resheniya/kommunalnyie-sluzhbyi.html" class="menu_openBlock__link">Коммунальные и&nbsp;<br>экстренные</br> 
+                                                    службы</a>
+                                                <a href="https://galileosky.ru/resheniya/uspeshnyie-kejsyi/" class="menu_openBlock__link">Успешные кейсы</a>
+                                            </div>
+                                         </div>
+                                    </a></li>
+                                    <li class="headerBlock_menuNav__list"><a id="cursor">Обучение
+                                        <!--Выпадающий список меню-->
+                                        <div class="menu_open">
+                                            <div class="menu_openBlock">
+                                                <a href="https://galileosky.ru/obuchenie/" class="menu_openBlock__link">Все курсы</a>
+                                                <span class="menu_openBlock__title">обзор всех вариантов 
+                                                    <br>подключения</br>
+                                                    Galileosky</span>
+                                            </div>
+                                            <div class="menu_openBlock"> 
+                                                <a href="https://galileosky.ru/obuchenie/shkola-easy-logic.html" class="menu_openBlock__link">Школа Easy Logic</a>
+                                                <span class="menu_openBlock__title">3-ступенчатая 
+                                                    <br>программа обучения</br>
+                                                    технологии Easy Logic 
+                                                    <br>от&nbsp;основ до&nbsp;разработки</br>
+                                                    скриптов</span>
+                                            </div>
+                                            <div class="menu_openBlock">
+                                                <a href="https://www.youtube.com/user/Support7GIS/featured" target="_blank" class="menu_openBlock__link">Видео</a>
+                                                <span class="menu_openBlock__title">обучающие ролики 
+                                                    <br>по&nbsp;подключению,</br>
+                                                    настройке и&nbsp;работе 
+                                                    <br>с&nbsp;терминалами<br>
+                                                    мониторинга
+                                                    <br>транспорта</br></span>
+                                            </div>
+                                         </div>
+                                    </a></li>
+                                    <li class="headerBlock_menuNav__list"><a id="cursor">Поддержка
+                                        <!--Выпадающий список меню-->
+                                        <div class="menu_open">
+                                            <div class="menu_openBlock">
+                                                <a href="https://galileosky.ru/podderzhka/" class="menu_openBlock__link">О вариантах  поддержки</a>
+                                                <a href="https://galileosky.ru/podderzhka/biblioteka-algoritmov-easy-logic/" class="menu_openBlock__link">Библиотека алгоритмов
+                                                    <br>Easy Logic</br></a>
+                                                <a href="https://galileosky.ru/podderzhka/konfigurator/" class="menu_openBlock__link">Конфигуратор</a>
+                                                <a href="https://galileosky.ru/podderzhka/servis.html" class="menu_openBlock__link">Сервисное 
+                                                    <br>обслуживание</br></a>
+                                                <a href="https://forum.galileosky.ru" target="_blank" class="menu_openBlock__link">Форум</a>
+                                            </div>
+                                            <div class="menu_openBlock">
+                                                <span class="menu_openBlock__title">Документация</span>
+                                                <a href="https://base.galileosky.com/articles/#!docs-publication/manuals" target="_blank" class="menu_openBlock__link">Руководства</a>
+                                                <a href="https://base.galileosky.com/articles/#!docs-publication/galileosky-device-configuration" target="_blank" class="menu_openBlock__link">Инструкции</a>
+                                                <a href="https://base.galileosky.com/articles/#!docs-publication/faq" target="_blank" class="menu_openBlock__link">FAQ</a>
+                                            </div>
+                                         </div>
+                                    </a></li>
+                                    <li class="headerBlock_menuNav__list"><a id="cursor">Партнерам
+                                        <!--Выпадающий список меню-->
+                                        <div class="menu_open">
+                                            <div class="menu_openBlock">
+                                                <a href=" https://galileosky.ru/partneram/" class="menu_openBlock__link">Предложение
+                                                    <br>для партнеров</br></a>
+                                                <a href="https://galileosky.ru/partneram/dokumentyi.html" class="menu_openBlock__link">Документы</a>
+                                                <a href="https://lk.galileosky.com" target="_blank" class="menu_openBlock__link">Личный кабинет</a>
+                                            </div>
+                                         </div>
+                                    </a></li>
+                                    <li class="headerBlock_menuNav__list"><a id="cursor">О компании
+                                        <!--Выпадающий список меню-->
+                                        <div class="menu_open">
+                                            <div class="menu_openBlock">
+                                                <a href="https://galileosky.ru/company/" class="menu_openBlock__link">О Galileosky</a>
+                                                <a href="https://galileosky.ru/company/kalendar-meropriyatij/" class="menu_openBlock__link">Календарь 
+                                                    <br>мероприятий</br></a>
+                                                <a href="https://galileosky.ru/company/novosti/" class="menu_openBlock__link">Новости 
+                                                    <br>и статьи</br></a>
+                                                <a href="https://galileosky.ru/company/contacts.html" class="menu_openBlock__link">Контакты</a>
+                                                <a href="https://galileosky.ru/company/careers/" class="menu_openBlock__link">Карьера</a>
+                                                <a href="https://galileosky-award.ru" class="menu_openBlock__link">Премия 
+                                                    <br>Galileosky</br></a>
+                                            </div>
+                                         </div>
+                                    </a></li> 
                                 </ul>
                             </nav>
-                        </div>
+                        </div> 
                     </div>
-                </div>
+                </div>   
             </div>     
         </header>
         <!--Профессиональные системы телематики транспорта и стационарных объектов-->
-        <section class="blockContainer">
-            <h1 class="col-xxl-12 col-lg-10 col-md-6 title">Профессиональные системы телематики транспорта и&nbsp;стационарных объектов</h1>
+        <section class="blockContainer containerBox">
+            <h1 class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 title">Профессиональные системы телематики транспорта и&nbsp;стационарных объектов</h1>
             <h3 class="blockInfoStart_title">ГЛОНАСС/GPS-мониторинг, контроль и&nbsp;управление для экономии расходов на&nbsp;эксплуатацию</h3>
-            <button id="cursor" class="col-xxl-12 col-lg-12 col-md-12 col-sm-2 btnBigGreen">Узнать больше о&nbsp;продуктах</button>
-            <ul class="blockInfoStart_list">
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2">
+            <button id="cursor" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 btnBigGreen block">Узнать больше о&nbsp;продуктах</button>
+            <ul class="row blockInfoStart_list">
+                <li class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
                     <picture>
+                        <source srcset="img/terminale440.svg" media="(max-width:761px)">
+                        <source srcset="img/terminale1460.svg" media="(max-width:1200px)">
+                        <source srcset="img/terminale440.svg" media="(max-width:1360px)">
+                        <source srcset="img/terminale1460.svg" media="(max-width:1750px)">
                         <img class="blockInfoStart_img" src="img/terminale.svg" alt="Надежные терминалы">
                     </picture>
                     <h4 class="titleBlue">Надежные терминалы</h2>
                     <p class="titleText">Одинаково долговечно служат на&nbsp;экваторе и&nbsp;в&nbsp;Арктике. Минимальный срок службы терминала&nbsp;&mdash; 10&nbsp;лет. Данные из&nbsp;любой точки мира с&nbsp;любой техники&nbsp;&mdash; от&nbsp;болотохода до&nbsp;ледокола.</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2">
+                <li class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
                     <picture>
+                        <source srcset="img/setting440.svg" media="(max-width:761px)">
+                        <source srcset="img/setting1460.svg" media="(max-width:1200px)">
+                        <source srcset="img/setting440.svg" media="(max-width:1360px)">
+                        <source srcset="img/setting1460.svg" media="(max-width:1750px)">
                         <img class="blockInfoStart_img" src="img/setting.svg" alt="Гибкая настройка">
                     </picture>
                     <h4 class="titleBlue">Гибкая настройка</h2>
                     <p class="titleText">С&nbsp;технологией Easy Logic настраивайте систему управления под себя. Создавайте собственные сценарии: получайте голосовые уведомления, контролируйте электромобиль или выгрузку зерна.</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2">
+                <li class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
                     <picture>
+                        <source srcset="img/integration440.svg" media="(max-width:761px)">
+                        <source srcset="img/integration1460.svg" media="(max-width:1200px)">
+                        <source srcset="img/integration440.svg" media="(max-width:1360px)">
+                        <source srcset="img/integration1460.svg" media="(max-width:1750px)">
                         <img class="blockInfoStart_img" src="img/integration.svg" alt="Легкая интеграция">
                     </picture>
                     <h4 class="titleBlue">Легкая интеграция</h2>
                     <p class="titleText">Терминалы Galileosky совместимы с&nbsp;большинством систем мониторинга и&nbsp;оборудованием. Бесконечно расширяйте интеграции и&nbsp;подключайте терморегистраторы, датчики пассажиропотока и&nbsp;все, что нужно.</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2">
+                <li class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6">
                     <picture>
+                        <source srcset="img/help440.svg" media="(max-width:761px)">
+                        <source srcset="img/help1460.svg" media="(max-width:1200px)">
+                        <source srcset="img/help440.svg" media="(max-width:1360px)">
+                        <source srcset="img/help1460.svg" media="(max-width:1750px)">
                         <img class="blockInfoStart_img" src="img/help.svg" alt="Помощь вашему бизнесу">
                     </picture>
                     <h4 class="titleBlue">Помощь вашему бизнесу</h2>
@@ -93,95 +249,101 @@
             </ul>
         </section> 
         <!--Galileosky 10-->
-        <section class="blockContainer">
-            <div class="blockContainerBoxing">
-                <div class="blockInfoTerminal">
+        <section class="blockContainer containerBox">
+            <div class="blockContainerBoxing containerGrid">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 blockInfoTerminal">
                     <h2 class="titleColor">Galileosky&nbsp;10</h2>
                     <p class="blockInfoTerminal_text">профессиональный терминал <br>для мониторинга, контроля</br> и&nbsp;управления объектами</p> 
-                    <button id="cursor" class="btnGreen btnStep">Получить образец</button>
-                    <button id="cursor" class="btnBlue">Подробнее</button>
+                    <button id="cursor" class="btnGreen btnStep clsWnd">Получить образец</button>
+                    <button id="cursor" class="btnBlue clsWnd">Подробнее</button>
                 </div>
-                <div class="">
+                <button id="cursor" class="col-md-12 col-sm-12 btnGreen btnStep openWnd">Получить образец</button>
+                <button id="cursor" class="col-md-12 col-sm-12 btnBlue openWnd">Подробнее</button>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 imgBlock">
                     <picture>
-                        <img class="blockContainerBoxing_img" src="img/Galileosky_front.svg" alt="Cпутниковый терминал">
+                        <source srcset="img/Galileosky_front1460.svg" media="(max-width:1500px)">
+                        <img style="max-width: 818px; width: 100%;" src="img/Galileosky_front.svg" alt="Cпутниковый терминал">
                     </picture>
                 </div>
             </div>
-            <ul class="blockInfoStart_list">
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__box">
+            <ul class="row blockInfoStart_list">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__box">
                     <h4 class="titleBlue">Любые задачи</h4>
                     <p class="titleText">базовый мониторинг, передача данных без GSM, &laquo;свой-чужой&raquo; для с/х, электрокары, управление процессами на&nbsp;производстве</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__box">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__box">
                     <h4 class="titleBlue">Надежность</h4>
                     <p class="titleText">встроенная проф. карта памяти сохранит 100% данных. Стабильная работа в&nbsp;экстремальных условиях от &minus;40 &deg;C&nbsp;до&nbsp;+85&nbsp;&deg;C</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__box">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__box">
                     <h4 class="titleBlue">Гибкость</h4>
                     <p class="titleText">более 13 000 параметров из CAN-шины грузового транспорта и более 400 —
                         с прицепной техники</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__box">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__box">
                     <h4 class="titleBlue">Любые задачи</h4>
                     <p class="titleText">работает с&nbsp;любой периферией и&nbsp;любым&nbsp;ПО</p>
                 </li>
             </ul>
         </section>
         <!--Base Block Iridium-->
-        <section class="blockContainer">
-            <div class="blockContainerBoxing">
-                <div class="col-xxl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTerminal">
-                    <h2 class="col-xxl-8 col-lg-2 col-md-2 col-sm-2 titleColor">Base Block Iridium</h2>
+        <section class="blockContainer containerBox">
+            <div class="blockContainerBoxing containerGrid">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoTerminal">
+                    <h2 class="titleColor">Base Block Iridium</h2>
                     <p class="blockInfoTerminal_text">спутниковый терминал с&nbsp;возможностью выполнения мониторинга даже<br>при отсутствии сотовой сети</br></p>
-                    <button id="cursor" class="btnGreen btnStep">Получить образец</button>
-                    <button id="cursor" class="btnBlue">Подробнее</button>
+                    <button id="cursor" class="btnGreen btnStep clsWnd">Получить образец</button>
+                    <button id="cursor" class="btnBlue clsWnd">Подробнее</button>
                 </div>
-                <div class="col-xxl-6 col-lg-2 col-md-2 col-sm-2">
+                <button id="cursor" class="btnGreen btnStep openWnd">Получить образец</button>
+                <button id="cursor" class="btnBlue openWnd">Подробнее</button>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <picture>
-                        <img class="blockContainerBoxing_img" src="img/Iridium.svg" alt="Cпутниковый терминал">
+                        <source srcset="img/Iridium1460.svg" media="(max-width:1500px)">
+                        <img style="max-width: 818px; width: 100%;" src="img/Iridium.svg" alt="Cпутниковый терминал">
                     </picture>
                 </div>
             </div>
-            <ul class="blockInfoStart_list">
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__item">
+            <ul class="row blockInfoStart_list">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__item">
                     <h4 class="titleBlue">100% на&nbsp;связи</h4>
                     <p class="titleText">в&nbsp;любой точке мира</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__item">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__item">
                     <h4 class="titleBlue">Надежность</h4>
                     <p class="titleText">металлический антивандальный корпус, защита от&nbsp;взлома</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__item">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__item">
                     <h4 class="titleBlue">Оптимизация спутникового трафика</h4>
                     <p class="titleText">устанавливайте периодичность и&nbsp;размер передаваемых данных</p>
                 </li>
-                <li class="col-xxl-3 col-lg-2 col-md-2 col-sm-2 blockInfoStart_list__item">
+                <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoStart_list__item">
                     <h4 class="titleBlue">Двусторонняя связь</h4>
                     <p class="titleText">настраивайте удаленное управление терминалом через спутник</p>
                 </li>
             </ul>
         </section>
         <!--Эксклюзивные технологии-->
-        <section class="blockContainer">
+        <section class="blockContainer containerBox">
             <h2 class="blockInfoTechnology_title">Эксклюзивные технологии</h2>
-            <div class="blockInfoTechnology">
-                <div class="col-xxl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
                     <p class="blockInfoTechnology_text">CAN</p>
                     <p class="titleBottom">Легко получайте данные из&nbsp;CAN-шины и&nbsp;передавайте их
                             на&nbsp;сервер мониторинга</p>
                     <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
                 </div>
-                <div class="col-xxl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
+                <div class="col-xxl-6 col-xl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
                     <p class="blockInfoTechnology_text">EASY LOGYC</p>
                     <p class="titleBottom">Сценарии управления объектами мониторинга. Без ограничений</p>
                     <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
                 </div>
-                <div class="col-xxl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
+                <div class="col-xxl-6 col-xl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
                     <p class="blockInfoTechnology_text">HUB-TO-HUB</p>
                     <p class="titleBottom">Связь без GSM. Эффективный контроль техники по&nbsp;Wi-Fi&nbsp;&mdash; от&nbsp;лесозаготовки до&nbsp;карьера</p>
                     <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
                 </div>
-                <div class="col-xxl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
+                <div class="col-xxl-6 col-xl-6 col-lg-2 col-md-2 col-sm-2 blockInfoTechnology_block">
                     <p class="blockInfoTechnology_text">ECO DRIVING</p>
                     <p class="titleBottom">Снижайте издержки, оптимизируйте эксплуатацию&nbsp;ТС и&nbsp;сокращайте ДТП на&nbsp;15%</p>
                     <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
@@ -189,58 +351,49 @@
             </div>
         </section>
         <!--Каталог готовых алгоритмов для решения базовых и профессиональных задач-->
-        <section class="blockContainer">
+        <section class="blockContainer containerBox">
                 <h2 class="blockInfoTechnology_title">Каталог готовых алгоритмов
                     для решения базовых 
                     и&nbsp;профессиональных задач</h2>
                 <p class="blockInfoTechnology_textBlue">Библиотека из&nbsp;90&nbsp;решений</p>
-                <button id="cursor" class="col-xxl-12 col-lg-12 col-md-12 col-sm-2 btnBigGreen">Скачайте и&nbsp;настройте алгоритм бесплатно</button>
+                <button id="cursor" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-2 btnBigGreen">Скачайте и&nbsp;настройте алгоритм бесплатно</button>
         </section>
         <!--Информация в цифрах-->
-        <section class="blockContainerLine line">
-            <div class="blockContainer">
+        <section class="blockContainerLine line containerBox">
+            <div class="blockContainer containerBox">
                 <div class="blockInfonumbers">
                     <div class="blockInfonumbers_box">
-                        <p class="blockInfonumbers_text"><svg width="213" height="151" viewBox="0 0 213 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M150.988 150.994C138.299 150.994 127.361 147.988 118.176 141.974C108.99 135.914 101.911 127.225 96.9398 115.909C91.9682 104.545 89.5061 90.8854 89.5534 74.929C89.6008 58.9725 92.0866 45.4309 97.0108 34.304C101.982 23.1297 109.037 14.6307 118.176 8.80682C127.361 2.93561 138.299 0 150.988 0C163.677 0 174.615 2.93561 183.801 8.80682C193.034 14.6307 200.136 23.1297 205.107 34.304C210.079 45.4782 212.541 59.0199 212.494 74.929C212.494 90.9328 210.008 104.616 205.036 115.98C200.065 127.344 192.986 136.032 183.801 142.045C174.662 148.011 163.725 150.994 150.988 150.994ZM150.988 122.23C158.564 122.23 164.695 118.371 169.383 110.653C174.07 102.888 176.391 90.9801 176.343 74.929C176.343 64.4176 175.278 55.7528 173.147 48.9347C171.016 42.0691 168.057 36.9555 164.269 33.5938C160.481 30.232 156.054 28.5511 150.988 28.5511C143.46 28.5511 137.375 32.3627 132.735 39.9858C128.095 47.5616 125.751 59.2093 125.704 74.929C125.657 85.5824 126.675 94.4129 128.758 101.42C130.889 108.428 133.872 113.66 137.707 117.116C141.542 120.526 145.969 122.23 150.988 122.23Z" fill="#00BAF2"/>
-                            <path d="M68.6768 1.98853V147.443H33.5916V34.801H32.7393L0.210938 54.6874V24.2897L36.0774 1.98853H68.6768Z" fill="#00BAF2"/>
-                            </svg>
-                        лет</p>
+                        <div class="blockInfonumbers_boxLtl">
+                            <img class="blockInfonumbers_icon" src="img/10.svg">
+                            <span class="blockInfonumbers_text">лет</span>
+                        </div>
                         <p class="blockInfonumbers_sub">срок службы терминалов</p>
                         <p class="blockInfonumbers_note">Минимальные затраты <br>на&nbsp;обслуживание</br> терминалов</p>
                     </div>
                     <div class="blockInfonumbers_box">
-                        <p class="blockInfonumbers_text">до
-                            <svg width="310" height="145" viewBox="0 0 310 145" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M281.423 129.604V126.295C281.423 123.723 281.973 121.344 283.072 119.159C284.192 116.974 285.81 115.217 287.926 113.89C290.043 112.563 292.628 111.899 295.681 111.899C298.795 111.899 301.411 112.563 303.528 113.89C305.665 115.197 307.273 116.943 308.351 119.128C309.45 121.292 310 123.682 310 126.295V129.604C310 132.177 309.45 134.556 308.351 136.741C307.252 138.926 305.634 140.682 303.497 142.009C301.36 143.336 298.755 144 295.681 144C292.587 144 289.982 143.336 287.865 142.009C285.749 140.682 284.141 138.926 283.042 136.741C281.963 134.556 281.423 132.177 281.423 129.604ZM291.163 126.295V129.604C291.163 130.911 291.478 132.166 292.109 133.371C292.76 134.576 293.951 135.178 295.681 135.178C297.452 135.178 298.643 134.596 299.253 133.432C299.864 132.248 300.169 130.972 300.169 129.604V126.295C300.169 124.927 299.874 123.641 299.284 122.436C298.714 121.211 297.513 120.598 295.681 120.598C293.971 120.598 292.791 121.211 292.14 122.436C291.488 123.641 291.163 124.927 291.163 126.295ZM249 93.7045V90.3964C249 87.7826 249.56 85.3934 250.679 83.2288C251.819 81.0438 253.447 79.2979 255.564 77.991C257.681 76.6637 260.245 76 263.258 76C266.372 76 268.987 76.6637 271.104 77.991C273.241 79.2979 274.859 81.0438 275.958 83.2288C277.058 85.3934 277.607 87.7826 277.607 90.3964V93.7045C277.607 96.3183 277.047 98.7075 275.928 100.872C274.829 103.037 273.211 104.762 271.074 106.049C268.936 107.335 266.331 107.978 263.258 107.978C260.184 107.978 257.579 107.325 255.442 106.018C253.325 104.711 251.717 102.975 250.618 100.811C249.539 98.6462 249 96.2775 249 93.7045ZM258.831 90.3964V93.7045C258.831 95.0727 259.146 96.3489 259.777 97.5333C260.429 98.6973 261.589 99.2793 263.258 99.2793C265.049 99.2793 266.24 98.6973 266.83 97.5333C267.44 96.3489 267.746 95.0727 267.746 93.7045V90.3964C267.746 89.0282 267.461 87.7417 266.891 86.5369C266.321 85.3117 265.11 84.6991 263.258 84.6991C261.548 84.6991 260.378 85.3219 259.747 86.5676C259.136 87.8132 258.831 89.0895 258.831 90.3964ZM253.61 141.366L296.597 78.6342H304.932L261.945 141.366H253.61Z" fill="#00BAF2"/>
-                                <path d="M169.942 144.3C157.815 144.3 147.363 141.427 138.584 135.68C129.806 129.888 123.041 121.585 118.29 110.77C113.539 99.9103 111.186 86.8559 111.231 71.6069C111.276 56.3579 113.652 43.4167 118.358 32.7831C123.109 22.1043 129.851 13.982 138.584 8.41637C147.363 2.80546 157.815 0 169.942 0C182.069 0 192.521 2.80546 201.3 8.41637C210.123 13.982 216.911 22.1043 221.662 32.7831C226.413 43.4619 228.766 56.4032 228.721 71.6069C228.721 86.9012 226.345 99.9782 221.594 110.838C216.843 121.698 210.078 130.001 201.3 135.748C192.567 141.449 182.114 144.3 169.942 144.3ZM169.942 116.811C177.182 116.811 183.042 113.123 187.521 105.747C192.001 98.3266 194.218 86.9464 194.173 71.6069C194.173 61.5616 193.155 53.281 191.119 46.7651C189.082 40.204 186.254 35.317 182.634 32.1043C179.014 28.8916 174.784 27.2853 169.942 27.2853C162.747 27.2853 156.933 30.9279 152.498 38.213C148.064 45.4529 145.824 56.5842 145.779 71.6069C145.734 81.788 146.707 90.227 148.697 96.9239C150.734 103.621 153.584 108.621 157.25 111.924C160.915 115.182 165.146 116.811 169.942 116.811Z" fill="#00BAF2"/>
-                                <path d="M2.03622 143.906V119.743L52.738 75.3536C56.5389 71.9146 59.7743 68.7698 62.444 65.9191C65.1137 63.0231 67.1499 60.1272 68.5526 57.2312C69.9554 54.29 70.6567 51.1 70.6567 47.661C70.6567 43.8148 69.8196 40.5343 68.1454 37.8193C66.4712 35.0591 64.1634 32.9324 61.2222 31.4392C58.281 29.9459 54.91 29.1993 51.109 29.1993C47.2628 29.1993 43.8918 29.9912 40.9958 31.5749C38.0999 33.1134 35.8374 35.3532 34.2084 38.2944C32.6247 41.2356 31.8328 44.8103 31.8328 49.0185H0C0 39.5614 2.12672 31.3939 6.38015 24.516C10.6336 17.6381 16.6065 12.344 24.2989 8.63353C32.0365 4.87784 41.0184 3 51.2448 3C61.7879 3 70.9508 4.76472 78.7337 8.29417C86.5166 11.8236 92.5347 16.7558 96.7882 23.0907C101.087 29.3803 103.236 36.6881 103.236 45.0139C103.236 50.3081 102.173 55.557 100.046 60.7607C97.9194 65.9643 94.0958 71.711 88.5754 78.0006C83.1003 84.2903 75.3174 91.8243 65.2268 100.603L48.5977 115.942V116.824H104.933V143.906H2.03622Z" fill="#00BAF2"/>
-                            </svg>
-                        </p>
+                        <div class="blockInfonumbers_boxLtl">
+                            <span class="blockInfonumbers_text spl">до</span>
+                            <img class="blockInfonumbers_icon" src="img/20%.svg">
+                        </div>
                         <p class="blockInfonumbers_sub">снижение расходов
                                 на&nbsp;автопарк</p>
                         <p class="blockInfonumbers_note">Экономия за&nbsp;счет <br>контроля состояния&nbsp;ТС</br>
                                 и&nbsp;стиля вождения</p>
                     </div>
                     <div class="blockInfonumbers_box">
-                        <svg class="blockNunbers_text" width="700" height="151" viewBox="0 0 700 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M637.949 150.994C625.26 150.994 614.322 147.988 605.136 141.974C595.951 135.914 588.872 127.225 583.901 115.909C578.929 104.545 576.467 90.8854 576.514 74.929C576.562 58.9725 579.047 45.4309 583.972 34.304C588.943 23.1297 595.998 14.6307 605.136 8.80682C614.322 2.93561 625.26 0 637.949 0C650.638 0 661.576 2.93561 670.761 8.80682C679.994 14.6307 687.097 23.1297 692.068 34.304C697.04 45.4782 699.502 59.0199 699.455 74.929C699.455 90.9328 696.969 104.616 691.997 115.98C687.026 127.344 679.947 136.032 670.761 142.045C661.623 148.011 650.686 150.994 637.949 150.994ZM637.949 122.23C645.525 122.23 651.656 118.371 656.344 110.653C661.031 102.888 663.351 90.9801 663.304 74.929C663.304 64.4176 662.239 55.7528 660.108 48.9347C657.977 42.0691 655.018 36.9555 651.23 33.5938C647.442 30.232 643.015 28.5511 637.949 28.5511C630.421 28.5511 624.336 32.3627 619.696 39.9858C615.056 47.5616 612.712 59.2093 612.665 74.929C612.618 85.5824 613.636 94.4129 615.719 101.42C617.85 108.428 620.833 113.66 624.668 117.116C628.503 120.526 632.93 122.23 637.949 122.23Z" fill="#00BAF2"/>
-                                <path d="M504.152 150.994C491.463 150.994 480.525 147.988 471.34 141.974C462.154 135.914 455.075 127.225 450.104 115.909C445.132 104.545 442.67 90.8854 442.717 74.929C442.765 58.9725 445.251 45.4309 450.175 34.304C455.146 23.1297 462.201 14.6307 471.34 8.80682C480.525 2.93561 491.463 0 504.152 0C516.841 0 527.779 2.93561 536.965 8.80682C546.198 14.6307 553.3 23.1297 558.271 34.304C563.243 45.4782 565.705 59.0199 565.658 74.929C565.658 90.9328 563.172 104.616 558.2 115.98C553.229 127.344 546.15 136.032 536.965 142.045C527.826 148.011 516.889 150.994 504.152 150.994ZM504.152 122.23C511.728 122.23 517.859 118.371 522.547 110.653C527.234 102.888 529.555 90.9801 529.507 74.929C529.507 64.4176 528.442 55.7528 526.311 48.9347C524.181 42.0691 521.221 36.9555 517.433 33.5938C513.645 30.232 509.218 28.5511 504.152 28.5511C496.624 28.5511 490.539 32.3627 485.899 39.9858C481.259 47.5616 478.915 59.2093 478.868 74.929C478.821 85.5824 479.839 94.4129 481.922 101.42C484.053 108.428 487.036 113.66 490.871 117.116C494.706 120.526 499.133 122.23 504.152 122.23Z" fill="#00BAF2"/>
-                                <path d="M370.355 150.994C357.666 150.994 346.728 147.988 337.543 141.974C328.357 135.914 321.279 127.225 316.307 115.909C311.335 104.545 308.873 90.8854 308.921 74.929C308.968 58.9725 311.454 45.4309 316.378 34.304C321.35 23.1297 328.404 14.6307 337.543 8.80682C346.728 2.93561 357.666 0 370.355 0C383.045 0 393.982 2.93561 403.168 8.80682C412.401 14.6307 419.503 23.1297 424.475 34.304C429.446 45.4782 431.908 59.0199 431.861 74.929C431.861 90.9328 429.375 104.616 424.404 115.98C419.432 127.344 412.353 136.032 403.168 142.045C394.029 148.011 383.092 150.994 370.355 150.994ZM370.355 122.23C377.931 122.23 384.063 118.371 388.75 110.653C393.438 102.888 395.758 90.9801 395.71 74.929C395.71 64.4176 394.645 55.7528 392.514 48.9347C390.384 42.0691 387.424 36.9555 383.637 33.5938C379.849 30.232 375.422 28.5511 370.355 28.5511C362.827 28.5511 356.743 32.3627 352.102 39.9858C347.462 47.5616 345.119 59.2093 345.071 74.929C345.024 85.5824 346.042 94.4129 348.125 101.42C350.256 108.428 353.239 113.66 357.074 117.116C360.909 120.526 365.336 122.23 370.355 122.23Z" fill="#00BAF2"/>
-                                <path d="M211.158 149.432C200.078 149.432 190.253 147.538 181.683 143.75C173.161 139.915 166.437 134.635 161.513 127.912C156.589 121.188 154.079 113.447 153.984 104.688H189.354C189.496 107.86 190.514 110.677 192.408 113.139C194.302 115.554 196.882 117.448 200.149 118.821C203.416 120.194 207.133 120.881 211.3 120.881C215.466 120.881 219.136 120.147 222.308 118.679C225.528 117.164 228.037 115.104 229.837 112.5C231.636 109.848 232.512 106.818 232.465 103.409C232.512 100 231.541 96.9697 229.553 94.3182C227.564 91.6667 224.747 89.607 221.101 88.1392C217.502 86.6714 213.241 85.9375 208.317 85.9375H194.183V60.9375H208.317C212.625 60.9375 216.413 60.2273 219.68 58.8068C222.995 57.3864 225.575 55.3977 227.422 52.8409C229.268 50.2367 230.168 47.2538 230.121 43.892C230.168 40.625 229.387 37.7604 227.777 35.2983C226.215 32.7888 224.013 30.8475 221.172 29.4744C218.378 28.1013 215.135 27.4148 211.442 27.4148C207.559 27.4148 204.032 28.1013 200.859 29.4744C197.734 30.8475 195.249 32.7888 193.402 35.2983C191.555 37.8078 190.585 40.7197 190.49 44.0341H156.896C156.991 35.3693 159.406 27.7462 164.141 21.1648C168.875 14.536 175.315 9.35133 183.459 5.6108C191.65 1.87027 200.978 0 211.442 0C221.858 0 231.02 1.82292 238.928 5.46875C246.835 9.11458 252.99 14.0862 257.393 20.3835C261.797 26.6335 263.999 33.7121 263.999 41.6193C264.046 49.8106 261.371 56.5578 255.973 61.8608C250.623 67.1638 243.733 70.4309 235.305 71.6619V72.7983C246.574 74.1241 255.073 77.7699 260.803 83.7358C266.579 89.7017 269.444 97.1591 269.396 106.108C269.396 114.536 266.911 122.017 261.939 128.551C257.015 135.038 250.149 140.152 241.342 143.892C232.583 147.585 222.521 149.432 211.158 149.432Z" fill="#00BAF2"/>
-                                <path d="M143.677 1.98877V147.443H108.592V34.8013H107.739L75.2109 54.6876V24.2899L111.077 1.98877H143.677Z" fill="#00BAF2"/>
-                                <path d="M55.2109 94.902L0.210938 118V100.752L36.5231 87.152L35.9913 88.0257V86.0123L36.5231 86.848L0.210938 73.2855V56L55.2109 79.098V94.902Z" fill="#00BAF2"/>
-                        </svg>
+                        <div class="blockInfonumbers_boxLtl">
+                            <img class="blockInfonumbers_icon" src="img/13000.svg">
+                        </div>
                         <p class="blockInfonumbers_sub">параметров по&nbsp;протоколам J1939DA и&nbsp;ISOBUS</p>
                         <p class="blockInfonumbers_note">Для грузовых автомобилей <br>и&nbsp;сельскохозяйственной</br> техники</p>
                     </div>
                 </div>
             </div> 
         </section> 
-            <div class="blockContainer">
-                <button id="cursor" class="col-xxl-12 col-lg-12 col-md-12 col-sm-2 btnBigGreen">Смотреть каталог</button>
+            <div class="blockContainer containerBox">
+                <button id="cursor" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-2 btnBigGreen">Смотреть каталог</button>
             </div>
-        <!--Все данные в удобном формате-->  
+        <!--Все данные в удобном формате  
         <section class="blockContainer">
                 <h2 class="blockInfoTechnology_title">Все данные 
                     <br>в&nbsp;удобном формате</br></h2>
@@ -253,9 +406,14 @@
                     <a href="https://galileosky.ru/products/integraczii/po-monitoringa.htm" class="col-xxl-12 col-lg-12 col-md-12 col-sm-2 btnBigBlue_text">Подробнее об&nbsp;интеграции с&nbsp;ПО мониторинга</a> 
                 </button>
   
-        </section>
+        </section>-->
         <!--Терминалы Galileosky для любых отраслей-->
-        <section class="blockContainer">
+        <section class="blockContainer containerExl">
+            <div class="containerBox">
+                <h2 class="blockInfoTechnology_title">Терминалы Galileosky <br>для любых отраслей</br></h2>
+                <p class="blockInfoTechnology_ttl">Наши эксперты применяют стандарт мониторинга для оптимизации логистики и&nbsp;сокращения расходов на&nbsp;обслуживание </p>
+            </div>
+            
             <div id="wrapper">
                 <div class="corouselBlock" id="carousel">
                     <div id="content">
@@ -305,7 +463,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="blockButton">
+                <div class="blockButton containerBox">
                     <button id="prev" class="buttonRound">
                         <span class="icon-arrowStroke"></span>
                     </button>
@@ -354,13 +512,13 @@
             </div>
         </section>
         <!--Узнайте, как мы можем помочь вашему бизнесу вырасти-->
-        <section class="blockContainer">
+        <section class="blockContainer containerBox">
             <div class="blockHelpBlock">
-                <h2 class="blockHelpTitle">Узнайте, как мы&nbsp;можем 
+                <h2 class="blockHelpTitle col-xxl-6 col-xl-6">Узнайте, как мы&nbsp;можем 
                     помочь вашему бизнесу
                     вырасти</h2>
                 <div>
-                    <div class="blockHelpBlock_form">
+                    <div class="blockHelpBlock_form col-xxl-6 col-xl-6">
                         <div class="input_textBlock">
                             <input class="input_text input_decoration" placeholder="Имя" type="text" name="name"></input>
                         </div>
@@ -382,7 +540,7 @@
             </div>
         </section>
         <!--Новости и статьи-->
-        <section class="blockContainer">
+        <section class="blockContainer containerExl">
             <div>
                 <h2 class="blockInfoTechnology_title">Новости и&nbsp;статьи</h2>
                 <div class="wrapper">
@@ -424,7 +582,7 @@
                     </div>
                 </div>
             </div>
-            <div class="blockButton map">
+            <div class="blockButton map containerBox">
                 <button id="cursor" class="buttonRound active first">
                     <span class="icon-arrowStroke"></span>
                 </button>
@@ -434,9 +592,9 @@
             </div>
         </section>
         <!--Footer-->
-        <footer class="blockFooter">
+        <footer class="blockFooter containerBox">
             <div class="blockFooter_box">
-                <div class="footerBlock col-xxl-12">
+                <div class="footerBlock col-xxl-12 col-xl-12">
                     <div class="footer_blockAdress">
                         <img src="img/logo_Galileosky.svg">
                         <div>
