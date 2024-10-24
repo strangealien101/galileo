@@ -5,6 +5,21 @@
     }
 }
 
+@media (max-width:1749px) {
+    .blockContainer_head {
+        padding: 0;
+    }
+
+    .headerBlock {
+        padding-top: 12px;
+    }
+
+    .menu_open {
+        width: 200px;
+        margin-left: -20px;
+    }
+}
+
 @media (max-width:1695px) {
     .blockInfonumbers_icon {
         height: 114px;
@@ -40,7 +55,7 @@
     }
 
     .blockInfoTechnology_list {
-        max-width: 413px;
+        width: 413px !important;
         height: 572px;
     }
 
@@ -102,9 +117,11 @@
         line-height: 28px;
     }
 
-    .btnBigGreen {
+    .btnBigGreen, .btnBigGreenTwo {
         padding: 24px 0 24px 0;
     }
+
+
 
     .blockInfoTechnology_ttl {
         font-size: 34px;
@@ -146,7 +163,7 @@
         line-height: 40px;
     }
 
-    .btnBigGreen {
+    .btnBigGreen, .btnBigGreenTwo  {
         font-size: 26px;
         line-height: 31px;
     }
@@ -222,6 +239,178 @@
   
 }
 
+@media (max-width:1476px) {
+    .headerBlock_menuNav__link {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .menu_openBlock__link {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .headerBlock_menuNav__link {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .menu_open {
+        width: 170px;
+        margin-left: -27px;
+    }
+}
+
+@media (max-width:1441px) {
+    .blockInfoTechnology_block {
+        padding: 40px;
+    }
+
+    .blockContainer {
+        margin-bottom: 140px;
+    }
+
+    .footerEndBox_text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .headerBlock_info__tel {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .headerBlock_info__btn {
+        font-size: 14px;
+        line-height: 16px;
+        height: 45px;
+    }
+
+    .headerBlock_logo__img {
+       width: 393px;
+    }
+
+    .headerBlockBoxTop {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu_openBlock__link {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .menu_openBlock__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .modalContainer {
+        width: 900px;
+    }
+
+    .modalTitle {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .modalRow {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .btnModal  {
+        font-size: 26px;
+        line-height: 31px;
+        width: 415px;
+        height: 80px;
+    }
+
+    .btnText {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .modalTitle__text {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .footerEndIcon {
+        width: 44px;
+    }
+
+    .footerEndBox_text {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+
+}
+
+@media (max-width:1396px) {
+    .blockInfonumbers_icon {
+        height: 90px;
+    }
+
+    .blockInfonumbers_sub {
+        margin-bottom: 25px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .blockInfonumbers_note {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .headerBlock_logo__img {
+        width: 260px;
+    }
+
+
+}
+
+@media (max-width:1362px) {
+    .blockHelpTitle {
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .footerInfoTitle {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .footerInfoTitle_text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .footerInfoTitle_text__link {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .footer_tel {
+        font-size: 26px;
+        line-height: 31px;
+    }
+
+    .footer_mode {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .footer_adress {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+
+}
+
 @media (max-width:1302px) {
     .titleColor {
         font-size: 70px;
@@ -245,6 +434,65 @@
     }
 }
 
+@media (max-width:1309px) {
+    .footer_btn {
+        width: 242px;
+        text-align: center;
+    }
+
+    .footer_btnText {
+        padding: 14px 0 14px 0;
+
+    }   
+
+    .headerBlock_info__tel {
+        margin-right: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .headerBlock_info__btn {
+        margin-right: 20px;
+        font-size: 14px;
+        line-height: 16px;
+        height: 54px;
+        width: 172px;
+    }
+
+    .icon-close-2:before {
+        font-size: 20px;
+    }
+
+    .icon-Vector1:before {
+        font-size: 25px;
+    }
+
+
+
+}
+
+@media (max-width:1289px) {
+    .footerEndText {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width:1260px) {
+    .blockInfoTechnology_title {
+        font-size: 70px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width:1199px) {
+    .blockHelpBlock {
+        flex-direction: column;
+        margin-bottom: 30px;
+        }
+    }
+
 @media (max-width:1175px) {
     .title {
         font-size: 50px;
@@ -256,7 +504,146 @@
         line-height: 60px;
     }
 
+    .blockContainerBig {
+        margin-bottom: 100px;
     }
+
+    .footerEndBox {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 500px;
+    }
+
+    .footerEnd {
+        justify-content: center;
+        grid-template:
+        "socNet" 
+        "Sklogo" ;
+        }
+
+    .blockText {
+     display: none;
+        }
+
+    .blockLogo {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .blockTextEnd {
+        padding: 100px 0 60px 0;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid var(--Arven);
+    }
+
+    .headerBlockBox {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        max-width: 200px;
+    }
+
+    .menu_openBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_openBlock__link {
+        margin-bottom: 10px;
+    }
+
+    .menu_openBlock {
+        padding-bottom: 10px
+    }
+
+    .menu_openBlock__title {
+        text-align: center;
+    }
+
+    .headerBlock {
+        padding: 12px 0 30px 0;
+    }
+
+    .headerBlock_info__tel {
+        margin-bottom: 20px;
+    }
+
+    .headerBlock_info__btn {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+
+    }
+
+
+@media (max-width:1084px) {
+    .blockInfonumbers {
+        flex-direction: column;
+    }
+
+    .blockInfonumbers_box:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .line {
+        background: url(../img/line.svg) no-repeat 40% 90%;   
+    }
+
+    .input_text {
+        padding-bottom: 10px;
+    }
+
+    .footerBox {
+        display: grid;
+        gap: 20px;
+        
+        grid-template:
+        "inf inf inf" 
+        "pro ind dec"
+        "tra sup par"
+        "abo adr adr" ;
+      }
+    
+
+      .footerImgLogo  {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+      }
+
+        .footer_blockAdress {
+            grid-area: blk1;
+            grid-column: span 2;
+        }
+
+    
+
+    
+
+
+    .blackBox {
+        display: none;
+    }
+
+    .blockFooter_box {
+        padding-top: 50px;
+    }
+
+   
+}
 
 @media (max-width:992px) {
     .openWnd {
@@ -289,7 +676,11 @@
         text-align: center;
     }
 
-
+    .btnModal {
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
 
 }
 
@@ -305,7 +696,7 @@
         line-height: 38px;
     }
 
-    .btnBigGreen {
+    .btnBigGreen, .btnBigGreenTwo {
         font-size: 20px;
         line-height: 24px;
     }
@@ -323,12 +714,52 @@
         height: 300px;
     }
 
+    .spslTitle {
+        padding: 0 50px;
+    }
 
+    .modalContainer {
+        max-width: 400px;
+        width: 100%;
+    }
 
+    .modalTitle {
+        font-size: 30px;
+        line-height: 34px;
+    }
 
+    .modalRow {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .modalInfo {
+        padding: 0 40px 40px 40px;
+    }
+
+    .modalTitle {
+        font-size: 30px;
+        line-height: 27px;
+    }
+
+    .modalTitle__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .textMessageOne {
+        display: none;
+    }
+
+    .textMessageTwo {
+        display: flex;
+    }
+
+    .blockTextEnd {
+        padding: 70px 0 70px 0;
+    }
 
 }
-
 @media (max-width:768px) {
     .blockInfoStart_list__box {
         height: 151px;
@@ -337,10 +768,158 @@
     .blockInfoStart_list__item {
         height: 151px;
     }
+
+    .blockInfoTechnology_title {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .blockButton {
+        justify-content: center;
+    }
+
+    .blockInfoTechnology_ttl {
+        display: none;
+    }
+
+    .marquee-content {
+        height: 160px;
+    }
+
+    .footerInfoTitle {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .footerInfoTitle_text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .footerInfoTitle_text__link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .footer_adress {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .footer_tel {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer_mode {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .mobileMenu {
+        max-width: 150px;
+    }
+
+    .containerBtn {
+        justify-content: center;
+    }
+
 }
 
 
+@media (max-width:680px) {
 
+    .blockInfoTechnology_title {
+        font-size: 34px;
+        line-height: 37px;
+    }
+
+    .blockInfoTechnology_text {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .btnBigGreen, .btnBigGreenTwo {
+        padding: 11px 68px;
+    }
+
+    .blockHelpBlock_btnBox {
+        flex-direction: column;
+    }
+
+    .blockHelpBlock_btn {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .blockInfoTechnology_list {
+        height: 401px;
+        width: 295px !important;
+    }
+
+    .blockInfoTechnology_lisText {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .footerEndIcon {
+        width: 30px;
+    }
+
+    .footerEndBox_text {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .footerEnd_logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footerEndIcon {
+        margin-right: 8px;
+    }
+
+    .footerEndBox {
+        width: 400px;
+    }
+
+    .blockHelpBlock_btnBox__text {
+        text-align: center;
+    }
+}
+
+@media (max-width:570px) {
+    .blockInfoTechnology_textBlue {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .blockInfoTechnology_img {
+        width: 295px;
+        height: 295px;
+    }
+
+    .headerBlock_logo__img {
+        width: 193px;
+    }
+
+    .icon-Vector1:before {
+        font-size: 20px;
+    }
+
+    .icon-Frame-826:before {
+        font-size: 13px;
+    }
+
+    .mobileMenu {
+        width: 120px;
+    }
+
+}
 
 @media (max-width:532px) {
     .containerBox {
@@ -362,7 +941,48 @@
         line-height: 24px;
     }
 
+    .blockInfoTechnology_text {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .titleBottom {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .blockInfoTechnology_btn {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .blockInfoTechnology_block {
+        height: 400px;
+    }
+
+    .blockInfonumbers_text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .modalContainer {
+        max-width: 400px;
+    }
+
+    .modalInfo {
+        padding: 0 30px 30px 30px;
+    }
+
 
 
 
 }
+
+@media (max-width:480px) {
+    .headerBlock_logo__img {
+        max-width: 193px;
+    }
+
+
+}
+
