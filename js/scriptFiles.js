@@ -45,63 +45,50 @@ let swiper = new Swiper('.swiper', {
     },
   },
   });
-  
-  
-
-/* Модальные окна */
-let closeCall = document.querySelector('.modalBtn');
-let playBtn = document.querySelector('.headerBlock_info__btn');
-let openBlock = document.querySelector('.modal');
-let pushCall = document.querySelector('.btnModal');
-let windowThnks = document.querySelector('.modalInfoBoxTwo');
-let windowOrder = document.querySelector('.modalInfoBox');
-let winThks = document.querySelector('.modalInfoThanks');
-let test = document.querySelector('.testSample');
-let infotext = document.querySelector('.modalInfoTest');
-let btnGreen = document.querySelector('.btnGreen');
-let btnPush = document.querySelector('.blockHelpBlock_button')
-
-playBtn.addEventListener('click', openWindow);
-
-function openWindow () {
-    openBlock.style.display = "flex";
-}
-
-closeCall.addEventListener('click', closeWindow);
-
-function closeWindow () {
-    openBlock.style.display = "none";
-}
-
-pushCall.addEventListener('click', newWindow);
-
-function newWindow () {
-    windowOrder.style.display = "none";
-    windowThnks.style.display = "flex";
-}
-
-btnGreen.addEventListener('click', opentext);
-
-function opentext () {
-    test.display.style = "flex";
-}
-
-btnPush.addEventListener('click', lastWindow);
-
-function lastWindow () {
-    infotext.style.display = 'none',
-    winThks.style.display = "flex";
-}
 
 
-}
+  $(document).ready(function(){ 
+    $(".slide-one").owlCarousel({
+      loop: false, //Зацикливаем слайдер
+      margin:10, //Отступ от картино если выводите больше 1
+      nav:false, //Отключил навигацию
+      autoWidth: 300,
+      responsive:{ //Адаптация в зависимости от разрешения экрана
 
+          320:{
+            spaceBetween: 20,
+            slidesPerView: 1,
+          },
+          700: {
+            spaceBetween: 20,
+            slidesPerView: 2,
+          },
+          992:{
+            spaceBetween: 20,
+            slidesPerView: 3,
+          },
+          1200:{
+            spaceBetween: 30,
+            slidesPerView: 4,
+          },
+          2000: {
+            spaceBetween: 30,
+            slidesPerView: 5,
+          },
+      }
+  });
+}); 
 
 
 document.querySelector('.search_wrap').addEventListener('input', function(ev) {
-    this.classList.toggle('enter', ev.target.value != '');
-  });
-  document.querySelector('.search_clear').addEventListener('click', function(ev) {
-    this.previousElementSibling.value=''; this.previousElementSibling.focus();
-    this.previousElementSibling.dispatchEvent(new Event('input', {'bubbles': true}));
-  });
+  this.classList.toggle('enter', ev.target.value != '');
+});
+document.querySelector('.search_clear').addEventListener('click', function(ev) {
+  this.previousElementSibling.value=''; this.previousElementSibling.focus();
+  this.previousElementSibling.dispatchEvent(new Event('input', {'bubbles': true}));
+});
+
+}
+
+
+

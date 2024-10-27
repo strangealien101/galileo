@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/7224d590f5/UntitledProject/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/demo.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">    
 </head>
 <body>
     <div class="greatPage container">
-        
         <!--Header-->
         <header class="blockHeader containerBox">
             <div class="blockContainer_head">
@@ -26,37 +28,29 @@
                     </div>
                     <div class="headerBlockBox"> 
                         <div class="headerBlockBoxTop">
-                            <div class="">
+                            <div class="headerBlockBoxContainer">
                                 <div class="headerBlock_info">
                                     <a href="tel:+74950013930" class="headerBlock_info__tel" >+7 (495) 001 39 30</a>
                                     <button class="headerBlock_info__btn">Заказать звонок</button>
                                     <div class="headerBlock_info__icon">
                                         <div class="blockIcons">
-                                            <span class="icon-Vector1"></span>
-
+                                            <div>
+                                                <span class="icon-Vector1"></span>
+                                            </div>
                                             <!--форма поиска-->
                                             <form class="header__form-search form-search">
                                                 <input class="form-search__input-search" type="text" placeholder="Поиск">
-                                                <!--<button class="form-search__btn-search btn-reset" type="submit" aria-label="Поиск">-->
-                                                <span id="close-loupe" class="icon-Vector2"></span>
-                                               
+                                                <span id="close-loupe" class="icon-Vector2 iconLoupe"></span>
                                             </form>
-
-                                            <!--
-                                            <div class="search-box">
-                                                <button class="btn-search">
-                                                    <span id="close-loupe" class="icon-Vector2 fas fa-search"></span></button>
-                                                <input type="text" class="input-search" placeholder="Поиск">
-                                              </div>
-                                            
-                                            <form class="footerForm">
-                                                <span id="close-loupe" class="icon-Vector2"></span>
-                                                <input class="search fa fa-search"  type="search" id="search" placeholder="Поиск" />
-                                            </form>-->
                                         </div>
                                         <div class="headerBlock_info__btns">
-                                            <button class="headerBlock_info__btnTwo">En</button>
-                                            <button class="headerBlock_info__btnTwo">Es</button>
+                                            <div>
+                                                <button class="headerBlock_info__btnTwo">En</button>
+                                            </div>
+                                            <div>
+                                                <button class="headerBlock_info__btnTwo">Es</button>
+                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -453,26 +447,26 @@
                 <div class="container">
                     <ul class="row">
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/task.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Любые задачи</h4>
                                 <p class="titleText">базовый мониторинг, передача данных без GSM, &laquo;свой-чужой&raquo; для с/х, электрокары, управление процессами на&nbsp;производстве</p>
                             </div>
                         </li>
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/reliability.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Надежность</h4>
                             <p class="titleText">встроенная проф. карта памяти сохранит 100% данных. Стабильная работа в&nbsp;экстремальных условиях от &minus;40 &deg;C&nbsp;до&nbsp;+85&nbsp;&deg;C</p>
                             </div>
                         </li>
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/control.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Контроль ТС</h4>
                             <p class="titleText">более 13 000 параметров из CAN-шины грузового транспорта и более 400 —
                                 с прицепной техники</p>
                             </div>
                         </li>
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/flexibility.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Гибкость</h4>
                             <p class="titleText">работает с&nbsp;любой периферией и&nbsp;любым&nbsp;ПО</p>
                             </div>
@@ -485,7 +479,7 @@
         <!--Base Block Iridium-->
         <section class="blockContainer containerBox">
             <div class="blockContainerBoxing containerGrid">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 blockInfoTerminal">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 blockInfoTerminal">
                     <h2 class="titleColor">Base Block Iridium</h2>
                     <p class="blockInfoTerminal_text">спутниковый терминал с&nbsp;возможностью выполнения мониторинга даже<br>при отсутствии сотовой сети</br></p>
                     <button id="cursor" class="btnGreen btnStep clsWnd">Получить образец</button>
@@ -504,26 +498,25 @@
                 <div class="container">
                     <ul class="row">
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/Earth.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">100% на&nbsp;связи</h4>
                                 <p class="titleText">в&nbsp;любой точке мира</p>
-                                <img src="img/task.svg">
                             </div>
                         </li>
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/reliable.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Надежность</h4>
                                 <p class="titleText">металлический антивандальный корпус, защита от&nbsp;взлома</p>
                             </div>
                         </li>
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/space.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Оптимизация спутникового трафика</h4>
                                 <p class="titleText">устанавливайте периодичность и&nbsp;размер передаваемых данных</p>
                             </div>
                         </li>
                         <li class="col-xxl-3 col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                            <div class="blockInfoStart_list__box">
+                            <div class="blockInfoStart_list__box" style="background-image: url(img/connection.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <h4 class="titleBlue">Двусторонняя связь</h4>
                                 <p class="titleText">настраивайте удаленное управление терминалом через спутник</p>
                             </div>
@@ -539,7 +532,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class="blockInfoTechnology_block">
+                            <div class="blockInfoTechnology_block" style="background-image: url(img/can.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <p class="blockInfoTechnology_text">CAN</p>
                                 <p class="titleBottom">Легко получайте данные из&nbsp;CAN-шины и&nbsp;передавайте их
                                     на&nbsp;сервер мониторинга</p>
@@ -547,21 +540,21 @@
                             </div> 
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class="blockInfoTechnology_block">
+                            <div class="blockInfoTechnology_block" style="background-image: url(img/schema.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <p class="blockInfoTechnology_text">EASY LOGYC</p>
                                 <p class="titleBottom">Сценарии управления объектами мониторинга. Без ограничений</p>
                                 <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class=" blockInfoTechnology_block">
+                            <div class=" blockInfoTechnology_block" style="background-image: url(img/hubTohub.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <p class="blockInfoTechnology_text">HUB-TO-HUB</p>
                                 <p class="titleBottom">Связь без GSM. Эффективный контроль техники по&nbsp;Wi-Fi&nbsp;&mdash; от&nbsp;лесозаготовки до&nbsp;карьера</p>
                                 <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
                             </div>
                         </div>
                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class="blockInfoTechnology_block">
+                            <div class="blockInfoTechnology_block" style="background-image: url(img/eco.svg); background-repeat:no-repeat; background-position: bottom right; background-size: auto;">
                                 <p class="blockInfoTechnology_text">ECO DRIVING</p>
                                 <p class="titleBottom">Снижайте издержки, оптимизируйте эксплуатацию&nbsp;ТС и&nbsp;сокращайте ДТП на&nbsp;15%</p>
                                 <button id="cursor" class="blockInfoTechnology_btn">Подробнее</button>
@@ -613,20 +606,26 @@
             <div class="blockContainer containerBox">
                 <button id="cursor" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 btnBigGreen">Смотреть каталог</button>
             </div>
-        <!--Все данные в удобном формате  
-        <section class="blockContainer">
+        <!--Все данные в удобном формате-->  
+        <section class="blockContainerBig">
                 <h2 class="blockInfoTechnology_title">Все данные 
                     <br>в&nbsp;удобном формате</br></h2>
-                <div class="blockImg">
-                    <img class="blockImg_box blockImg_shadow" src="img/img_left.svg">
-                    <img class="blockImg_center" src="img/Img_center.svg">
-                    <img class="blockImg_box blockImg_shadows" src="img/img_right.svg">
-                </div>
-                <button id="cursor" class="btnBigBlue" >
-                    <a href="https://galileosky.ru/products/integraczii/po-monitoringa.htm" class="col-xxl-12 col-lg-12 col-md-12 col-sm-2 btnBigBlue_text">Подробнее об&nbsp;интеграции с&nbsp;ПО мониторинга</a> 
-                </button>
-  
-        </section>-->
+                    <div class="blockImgContr">
+                        <div class="blockImg">
+                            <img class="blockImg_box" style="mask-image: linear-gradient(270deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%); left: 0;" src="img/img_right.svg">
+                            <img class="blockImg_center" src="img/Img_center.png">
+                            <img class="blockImg_box" style="mask-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.5) 100%); right: 0;" src="img/img_left.svg">
+                        </div>
+                    </div>
+                    <div style="width: 100%; display: flex; justify-content: center;">
+                        <div class="blockContainer containerBox">
+                            <button id="cursor" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 btnBigBlue" >
+                                <a href="https://galileosky.ru/products/integraczii/po-monitoringa.htm" class="btnBigBlue_text">Подробнее об&nbsp;интеграции с&nbsp;ПО мониторинга</a> 
+                            </button>
+                        </div>
+                    </div>
+                
+        </section>
         <!--Терминалы Galileosky для любых отраслей-->
         <section class="blockContainerBig">
             <div class="containerBox">
@@ -634,8 +633,8 @@
                 <p class="blockInfoTechnology_ttl">Наши эксперты применяют стандарт мониторинга для оптимизации логистики и&nbsp;сокращения расходов на&nbsp;обслуживание </p>
             </div>
             <div class="container about__container">
-                <div class="section-about-container-guestcard">
-                    <div class="section-about-container-guestcard-swiper swiper flex">
+                <div class="section-about-container-terminals">
+                    <div class="section-about-container-terminals-swiper swiper flex">
                         <div class="swiper-wrapper">
                             <a class="swiper-slide slide blockInfoTechnology_list" href="https://galileosky.ru/resheniya/gruzoperevozki.html">
                                 <div class="swiper-slide__block">
@@ -758,7 +757,7 @@
         </section>
         <!--1,1 миллионов терминалов Galileosky работают в 100 странах мира-->
         <section class="blockContainerBig">
-                <h2 class="blockInfoTechnology_title spslTitle">1,1 миллионов терминалов <br>Galileosky работают в&nbsp;100</br> странах мира</h2>
+                <h2 class="blockInfoTechnology_title">1,1 миллионов терминалов <br>Galileosky работают в&nbsp;100</br> странах мира</h2>
                 <div class="blockInfoTechnology_company marquee">
                 <ul class="marquee-content">
                     <li>
@@ -803,7 +802,7 @@
                 <div>
                     <div class="blockHelpBlock_form col-xxl-6 col-xl-6">
                         <div class="input_textBlock">
-                            <input class="input_text input_decoration" placeholder="Имя" type="text" name="name"></input>
+                            <input class="input_text input_decoration inputOne" placeholder="Имя" type="text" name="name"></input>
                         </div>
                         <div class="input_textBlock">
                             <input class="input_text input_decoration inputPart" placeholder="Телефон" type="tel" name="contact" required></input>
@@ -823,57 +822,52 @@
             </div>
         </section>
         <!--Новости и статьи-->
-        <section class="blockContainer containerExl">
+            <section class="blockNews col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div>
                 <h2 class="blockInfoTechnology_title">Новости и&nbsp;статьи</h2>
-                <div class="wrapper">
-                    <div class="inner">
-                        <div class="blockList card">
-                            <div class="blockListNew">
-                                <img class="blockListNew_img" src="img/new1.svg">
-                                <p class="blockListNew_title">ОБНОВЛЕНИЯ</p>
-                                <p class="blockListNew_text">Полномасштабное производство Galileosky 10&nbsp;на смену Galileosky&nbsp;7x</p>
-                                <p class="blockListNew_textSmall">Обратите внимание: в&nbsp;ближайшие три месяца серийное производство линейки терминалов Galileosky 7x&nbsp;будет остановлено.</p>
-        
-                            </div>
-                            <div class="blockListNew">
-                                <img class="blockListNew_img" src="img/new2.svg">
-                                <p class="blockListNew_titleBlue">МЕРОПРИЯТИЯ</p>
-                                <p class="blockListNew_text">Цифровизации и&nbsp;инновации 
-                                        в&nbsp;сфере АПК</p>
-                                <p class="blockListNew_textSmall">20&nbsp;августа в&nbsp;10:00 (мск) приглашаем на&nbsp;вебинар &laquo;Цифровизации и&nbsp;инновации в&nbsp;сфере АПК&raquo;.</p>
-                            </div>
-                            <div class="blockListNew">
-                                <img class="blockListNew_img" src="img/new3.svg">
-                                <p class="blockListNew_title">ОБНОВЛЕНИЯ</p>
-                                <p class="blockListNew_text">Что нового в&nbsp;&laquo;Конфигураторе&raquo;? Версия&nbsp;5.4.16</p>
-                                <p class="blockListNew_textSmall">Легко получайте данные из&nbsp;CAN-шины и&nbsp;передавайте их&nbsp;на&nbsp;сервер мониторинга.</p>
-                            </div>
-                            <div class="blockListNew">
-                                <img class="blockListNew_img" src="img/new4.svg">
-                                <p class="blockListNew_titleBlue">МЕРОПРИЯТИЯ</p>
-                                <p class="blockListNew_text">Чтение ошибок из&nbsp;CAN через алгоритм Easy Logic</p>
-                                <p class="blockListNew_textSmall">Хотите повысить эффективность диагностики и&nbsp;сократить время на&nbsp;устранение неисправностей в&nbsp;системах CAN? Мы&nbsp;подготовили эксклюзивный вебинар, где мы&nbsp;раскроем секреты быстрого и&nbsp;точного чтения ошибок из&nbsp;CAN-сетей с&nbsp;помощью алгоритма Easy Logic.</p>
-                            </div>
-                            <div class="blockListNew">
-                                <img class="blockListNew_img" src="img/new5.svg">
-                                <p class="blockListNew_titleBlue">МЕРОПРИЯТИЯ</p>
-                                <p class="blockListNew_text">Конкурс &laquo;Привет, Galileosky!&raquo;</p>
-                                <p class="blockListNew_textSmall">25&nbsp;августа Galileosky отмечает 16&nbsp;лет! В&nbsp;честь этого мы&nbsp;собираем видеоприветы от&nbsp;наших партнеров и&nbsp;запускаем конкурс &laquo;Привет, Galileosky!&raquo;.</p>
-                            </div>
-                        </div>
+                <div class="blockList owl-carousel slide-one">
+                    <div class="blockListNew">
+                        <img class="blockListNew_img" src="img/new1.svg">
+                        <p class="blockListNew_title">ОБНОВЛЕНИЯ</p>
+                        <p class="blockListNew_text">Полномасштабное производство Galileosky 10&nbsp;на смену Galileosky&nbsp;7x</p>
+                        <p class="blockListNew_textSmall">Обратите внимание: в&nbsp;ближайшие три месяца серийное производство линейки терминалов Galileosky 7x&nbsp;будет остановлено.</p>
+
+                    </div>
+                    <div class="blockListNew">
+                        <img class="blockListNew_img" src="img/new2.svg">
+                        <p class="blockListNew_titleBlue">МЕРОПРИЯТИЯ</p>
+                        <p class="blockListNew_text">Цифровизации и&nbsp;инновации 
+                                в&nbsp;сфере АПК</p>
+                        <p class="blockListNew_textSmall">20&nbsp;августа в&nbsp;10:00 (мск) приглашаем на&nbsp;вебинар &laquo;Цифровизации и&nbsp;инновации в&nbsp;сфере АПК&raquo;.</p>
+                    </div>
+                    <div class="blockListNew">
+                        <img class="blockListNew_img" src="img/new3.svg">
+                        <p class="blockListNew_title">ОБНОВЛЕНИЯ</p>
+                        <p class="blockListNew_text">Что нового в&nbsp;&laquo;Конфигураторе&raquo;? Версия&nbsp;5.4.16</p>
+                        <p class="blockListNew_textSmall">Легко получайте данные из&nbsp;CAN-шины и&nbsp;передавайте их&nbsp;на&nbsp;сервер мониторинга.</p>
+                    </div>
+                    <div class="blockListNew">
+                        <img class="blockListNew_img" src="img/new4.svg">
+                        <p class="blockListNew_titleBlue">МЕРОПРИЯТИЯ</p>
+                        <p class="blockListNew_text">Чтение ошибок из&nbsp;CAN через алгоритм Easy Logic</p>
+                        <p class="blockListNew_textSmall">Хотите повысить эффективность диагностики и&nbsp;сократить время на&nbsp;устранение неисправностей в&nbsp;системах CAN? Мы&nbsp;подготовили эксклюзивный вебинар, где мы&nbsp;раскроем секреты быстрого и&nbsp;точного чтения ошибок из&nbsp;CAN-сетей с&nbsp;помощью алгоритма Easy Logic.</p>
+                    </div>
+                    <div class="blockListNew">
+                        <img class="blockListNew_img" src="img/new5.svg">
+                        <p class="blockListNew_titleBlue">МЕРОПРИЯТИЯ</p>
+                        <p class="blockListNew_text">Конкурс &laquo;Привет, Galileosky!&raquo;</p>
+                        <p class="blockListNew_textSmall">25&nbsp;августа Galileosky отмечает 16&nbsp;лет! В&nbsp;честь этого мы&nbsp;собираем видеоприветы от&nbsp;наших партнеров и&nbsp;запускаем конкурс &laquo;Привет, Galileosky!&raquo;.</p>
                     </div>
                 </div>
-            </div>
-            <div class="blockButton map containerBox">
-                <button id="cursor" class="buttonRound active first">
-                    <span class="icon-arrowStroke"></span>
-                </button>
-                <button  id="cursor" class="buttonRound second">
-                    <span class="icon-arrowNext"></span>
-                </button>
-            </div>
-        </section>
+                <div class="blockButton containerBox">
+                    <button id="cursor" class="buttonRound">
+                        <span class="icon-arrowStroke"></span>
+                    </button>
+                    <button  class="buttonRound second">
+                        <span class="icon-arrowNext"></span>
+                    </button>
+                </div>
+        </section> 
         <!--Footer-->
         <footer class="blockFooter containerBox">
             <div class="blockFooter_box">
@@ -1185,496 +1179,15 @@
                 <div class="blockTextEnd">
                     <p class="footerEndText">Политика конфиденциальности &copy;&nbsp;2021-2024 Galileosky</p>
                 </div>
-
-                <!---
-                <div class="footerEnd">
-                    <p class="footerEndText blockText">Политика конфиденциальности
-                        <br>&copy;&nbsp;2021-2024 Galileosky<br></p>
-                    <div class="footerEndBox blockNet">
-                        <a id="cursor" href="https://www.youtube.com/user/Support7GIS " class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_839)">
-                                <mask id="mask0_641_839" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="50">
-                                <path d="M50.5 0H0.5V50H50.5V0Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_641_839)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M50 14.3026C50 14.3026 49.511 10.8734 48.0125 9.36365C46.111 7.381 43.9797 7.37173 43.003 7.2567C36.0062 6.75293 25.511 6.75293 25.511 6.75293H25.489C25.489 6.75293 14.9937 6.75293 7.99687 7.2567C7.01875 7.37173 4.88908 7.381 2.98594 9.36365C1.4875 10.8738 1 14.3026 1 14.3026C1 14.3026 0.5 18.3304 0.5 22.3564V26.1322C0.5 30.1597 1 34.1859 1 34.1859C1 34.1859 1.4875 37.6149 2.98594 39.1249C4.88908 41.1074 7.3875 41.0454 8.5 41.2522C12.5 41.6349 25.5 41.7529 25.5 41.7529C25.5 41.7529 36.0062 41.7374 43.003 41.2337C43.9797 41.1172 46.111 41.1079 48.0125 39.1252C49.511 37.6149 50 34.1864 50 34.1864C50 34.1864 50.5 30.1599 50.5 26.1322V22.3564C50.5 18.3304 50 14.3026 50 14.3026ZM20.3375 30.7074L20.3359 16.7257L33.8453 23.7407L20.3375 30.7074Z" fill="#FF0000"/>
-                                <path d="M20.3375 30.7074L20.3359 16.7257L33.8453 23.7407L20.3375 30.7074Z" fill="white"/>
-                                </g>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_641_839">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Youtube</a>
-                        <a id="cursor" href="https://rutube.ru/channel/32500125/ " class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1147_303)">
-                                <mask id="mask0_1147_303" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="50">
-                                <path d="M38.3788 0H12.6212C5.92685 0 0.5 5.42685 0.5 12.1212V37.8788C0.5 44.5731 5.92685 50 12.6212 50H38.3788C45.0731 50 50.5 44.5731 50.5 37.8788V12.1212C50.5 5.42685 45.0731 0 38.3788 0Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_1147_303)">
-                                <path d="M50.5 0H0.5V50H50.5V0Z" fill="white"/>
-                                <path d="M50.5 25C64.3072 25 75.5 13.8071 75.5 1.14441e-05C75.5 -13.8071 64.3072 -25 50.5 -25C36.6929 -25 25.5 -13.8071 25.5 1.14441e-05C25.5 13.8071 36.6929 25 50.5 25Z" fill="#ED143B"/>
-                                <path d="M31.3841 23.8585H16.6123V18.0131H31.3841C32.2469 18.0131 32.8469 18.1636 33.148 18.4262C33.4491 18.6888 33.6356 19.1759 33.6356 19.8875V21.9864C33.6356 22.7361 33.4491 23.2233 33.148 23.4859C32.8469 23.7485 32.2469 23.8608 31.3841 23.8608V23.8585ZM32.3975 12.5022H10.3477V37.5H16.6123V29.3672H28.1574L33.6356 37.5H40.6507L34.6108 29.3291C36.8375 28.9991 37.8374 28.3167 38.6621 27.192C39.4867 26.0674 39.9003 24.2693 39.9003 21.8697V19.9953C39.9003 18.5721 39.7495 17.4475 39.4867 16.5855C39.2238 15.7235 38.7745 14.9737 38.1363 14.3003C37.4622 13.6628 36.7117 13.2138 35.8106 12.913C34.9096 12.6504 33.7839 12.5 32.3975 12.5V12.5022Z" fill="#100943"/>
-                                </g>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_1147_303">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Rutube</a>
-                        <a id="cursor" href="https://dzen.ru/id/618213a544229d6bb00940fe " class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_847)">
-                                <path d="M30.3214 29.8214C26.3929 33.875 26.1071 38.9286 25.7679 50C36.0893 50 43.2143 49.9643 46.8929 46.3929C50.4643 42.7143 50.5 35.25 50.5 25.2679C39.4286 25.625 34.375 25.8929 30.3214 29.8214ZM0.5 25.2679C0.5 35.25 0.535714 42.7143 4.10714 46.3929C7.78571 49.9643 14.9107 50 25.2321 50C24.875 38.9286 24.6071 33.875 20.6786 29.8214C16.625 25.8929 11.5714 25.6071 0.5 25.2679ZM25.2321 0C14.9286 0 7.78571 0.0357143 4.10714 3.60714C0.535714 7.28571 0.5 14.75 0.5 24.7321C11.5714 24.375 16.625 24.1071 20.6786 20.1786C24.6071 16.125 24.8929 11.0714 25.2321 0ZM30.3214 20.1786C26.3929 16.125 26.1071 11.0714 25.7679 0C36.0893 0 43.2143 0.0357143 46.8929 3.60714C50.4643 7.28571 50.5 14.75 50.5 24.7321C39.4286 24.375 34.375 24.1071 30.3214 20.1786Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_641_847">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Яндекс Дзен</a>
-                        <a id="cursor" href="https://vk.com/galileoskyteam" class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_852)">
-                                <path d="M4 3.5C0.5 7.03333 0.5 12.6833 0.5 24V26C0.5 37.3 0.5 42.95 4 46.5C7.53333 50 13.1833 50 24.5 50H26.5C37.8 50 43.45 50 47 46.5C50.5 42.9667 50.5 37.3167 50.5 26V24C50.5 12.7 50.5 7.05 47 3.5C43.4667 0 37.8167 0 26.5 0H24.5C13.2 0 7.55 0 4 3.5Z" fill="#0077FF"/>
-                                <path d="M27.1022 36.0169C15.7022 36.0169 9.20221 28.2169 8.93555 15.2169H14.6689C14.8522 24.7502 19.0522 28.7835 22.3855 29.6169V15.2169H27.7689V23.4335C31.0522 23.0835 34.5189 19.3335 35.6856 15.2002H41.0522C40.6146 17.3398 39.7405 19.3662 38.4845 21.1527C37.2284 22.9393 35.6175 24.4476 33.7522 25.5835C35.8338 26.6196 37.672 28.0851 39.1458 29.8835C40.6196 31.6819 41.6954 33.7723 42.3022 36.0169H36.3855C35.1189 32.0669 31.9522 29.0002 27.7689 28.5835V36.0169H27.1189H27.1022Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_641_852">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            ВКонтакте</a>
-                        <a id="cursor" href="https://t.me/galileosky_telematics" class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1139_280)">
-                                <path d="M25.5104 50.0208C39.3233 50.0208 50.5208 38.8233 50.5208 25.0104C50.5208 11.1975 39.3233 0 25.5104 0C11.6975 0 0.5 11.1975 0.5 25.0104C0.5 38.8233 11.6975 50.0208 25.5104 50.0208Z" fill="url(#paint0_linear_1139_280)"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8087 24.7394C19.0973 21.5741 23.9495 19.4708 26.3859 18.4504C33.3206 15.5558 34.7783 15.056 35.7154 15.0352C35.9236 15.0352 36.3818 15.0768 36.6941 15.3267C36.944 15.5349 37.0065 15.8057 37.0482 16.0139C37.0898 16.2222 37.1315 16.6595 37.0898 16.9927C36.715 20.9494 35.0906 30.5495 34.2577 34.9644C33.9036 36.8386 33.2164 37.4633 32.55 37.5258C31.0923 37.6507 29.9886 36.5679 28.5934 35.6516C26.3859 34.2147 25.1573 33.3192 23.0123 31.9031C20.5342 30.2788 22.1377 29.3833 23.5538 27.9256C23.9286 27.5508 30.3218 21.7199 30.4467 21.1993C30.4676 21.1368 30.4676 20.8869 30.3218 20.7619C30.176 20.637 29.9678 20.6786 29.8012 20.7203C29.5721 20.7619 26.0736 23.0943 19.2639 27.6965C18.2643 28.3838 17.3689 28.717 16.5567 28.6961C15.6612 28.6753 13.9536 28.1963 12.6625 27.7798C11.1006 27.2801 9.85116 27.0093 9.95529 26.1347C10.0178 25.6766 10.6425 25.2184 11.8087 24.7394Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <linearGradient id="paint0_linear_1139_280" x1="25.4896" y1="0" x2="25.4896" y2="49.6252" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2AABEE"/>
-                                <stop offset="1" stop-color="#229ED9"/>
-                                </linearGradient>
-                                <clipPath id="clip0_1139_280">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg> 
-                            Telegram</a>
-                    </div>
-                    <img id="cursor" href="https://sk.ru/" class="footerEnd_logo blockLogo" src="img/sk.svg">
-                </div>-->
             </div>
         </footer>
-        <!--
-        <footer class="blockFooter containerBox">
-            <div class="blockFooter_box">
-                <div class="footerBlock">
-                    <div class="footer_blockAdress">
-                        <img src="img/logo_Galileosky.svg">
-                        <div>
-                            <div class="footer_adressBox">
-                                <address class="footer_adress">Пермь, ул. А.&nbsp;Гайдара, 8</address>
-                                <a class="footer_adress">sales@galileosky.ru</a>
-                            </div>
-                            <div>
-                                <a href="tel:+74950013930" class="footer_tel">+7 (495) 001 39 30</a>
-                                <p class="footer_mode">Звонок бесплатный. Звоните ПН&mdash;ПТ 6:00&ndash;18:00 Мск</p>
-                            </div>
-                            <div id="cursor" class="footer_btn">
-                                <a class="footer_btnText">Заказать звонок</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footerPartInfo">
-                        <div class="footerPartInfo_box">
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">Продукты</p>
-                                <ul class="footerInfo_list">
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text">Устройства</span>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Galileosky&nbsp;10</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Base Block Iridium</a>
-                                    </li>
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text">Технологии</span>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Can Scanner</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Easy Logic</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Hub-to-hub</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Eco Driving</a>
-                                    </li>
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text">Алгоритмы</span>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Маркетплейс</a>
-                                    </li>
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text">Интеграции</span>
-                                        <a id="cursor" class="footerInfoTitle_text__link">Периферия</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link">ПО&nbsp;мониторинга</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">Отрасли</p>
-                                <ul class="footerInfo_list">
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Транспорт <br>и&nbsp;логистика</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Горнодобывающая 
-                                            <br>промышленность</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Нефтегазовая 
-                                            <br>промышленность</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Строительство</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Лесозаготовка0</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Сельское хозяйство</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Пассажарские перевозки, 
-                                            <br>каршеринг, такси</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Коммунальные и&nbsp;экстренные 
-                                            <br>службы</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Автоматизация промышленных <br>процессов</br></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">Решения</p>
-                                <ul class="footerInfo_list">
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Мониторинг 
-                                            <br>транспорта</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Контроль топлива</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Контроль стиля
-                                            <br>вождения</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Контроль режима
-                                            <brработы</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Удаленное 
-                                            <br>управление</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Мониторинг 
-                                            <br>вне сети GSM</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Охрана
-                                            и&nbsp;безопасность</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text__link">Успешные кейсы</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">Обучение</p>
-                                <ul class="footerInfo_list">
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text__link">Все курсы</span>
-                                        <a id="cursor" class="footerInfoTitle_text">обзор всех вариантов 
-                                            <br class="footer_link__list">подключения</br> 
-                                            Galileosky</a>
-                                    </li>
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text__link">Школа Easy Logic</span>
-                                        <a id="cursor" class="footerInfoTitle_text">3-ступенчатая 
-                                            <br>программа обучения</br> 
-                                            технологии Easy Logic
-                                            <br>от&nbsp;основ</br>
-                                            до&nbsp;программирования
-                                            <br>скриптов</br></a>
-                                    </li>
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text__link">Видео</span>
-                                        <a id="cursor" class="footerInfoTitle_text">обучающие ролики 
-                                            <br>по&nbsp;подключению,<br>
-                                            настройке и&nbsp;работе
-                                            <br>с&nbsp;терминалами</br>
-                                            мониторинга
-                                            <br>транспорта<br></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="footerPartInfo_box">
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">Поддержка</p>
-                                <ul class="footerInfo_list"> 
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">О вариантах поддержки</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Библиотека алгоритмов
-                                            <br>Easy Logic</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Конфигуратор</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Сервисное 
-                                            <br>обслуживание</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Форум</a>
-                                    </li>
-                                    <li class="flex-position footer_link">
-                                        <span class="footerInfoTitle_text footer_link__list">Документация</span>
-                                        <a id="cursor" class="footerInfoTitle_text__link footer_link__list">Руководства</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link footer_link__list">Инструкции</a>
-                                        <a id="cursor" class="footerInfoTitle_text__link footer_link__list">FAQ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">Партнерам</p>
-                                <ul class="footerInfo_list">
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Предложение
-                                            <br>для партнеров</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Документы</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text__link">Личный кабинет</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="footerPartInfo_block">
-                                <p class="footerInfoTitle">О компании</p>
-                                <ul class="footerInfo_list">
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">О Galileosky</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Календарь 
-                                            <br>мероприятий</br></a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Новости и&nbsp;статьи</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Контакты</a>
-                                    </li>
-                                    <li class="footer_link">
-                                        <a id="cursor" class="footerInfoTitle_text">Карьера</a>
-                                    </li>
-                                    <li class="footer_link"> 
-                                        <a id="cursor" class="footerInfoTitle_text__link">Премия Galileosky</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>   
-                    </div> 
-                </div>
-                <div class="footerEnd">
-                    <p class="footerEndText">Политика конфиденциальности
-                        <br>&copy;&nbsp;2021-2024 Galileosky<br></p>
-                    <div class="footerEndBox">
-                        <a id="cursor" href="https://www.youtube.com/user/Support7GIS " class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_839)">
-                                <mask id="mask0_641_839" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="50">
-                                <path d="M50.5 0H0.5V50H50.5V0Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_641_839)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M50 14.3026C50 14.3026 49.511 10.8734 48.0125 9.36365C46.111 7.381 43.9797 7.37173 43.003 7.2567C36.0062 6.75293 25.511 6.75293 25.511 6.75293H25.489C25.489 6.75293 14.9937 6.75293 7.99687 7.2567C7.01875 7.37173 4.88908 7.381 2.98594 9.36365C1.4875 10.8738 1 14.3026 1 14.3026C1 14.3026 0.5 18.3304 0.5 22.3564V26.1322C0.5 30.1597 1 34.1859 1 34.1859C1 34.1859 1.4875 37.6149 2.98594 39.1249C4.88908 41.1074 7.3875 41.0454 8.5 41.2522C12.5 41.6349 25.5 41.7529 25.5 41.7529C25.5 41.7529 36.0062 41.7374 43.003 41.2337C43.9797 41.1172 46.111 41.1079 48.0125 39.1252C49.511 37.6149 50 34.1864 50 34.1864C50 34.1864 50.5 30.1599 50.5 26.1322V22.3564C50.5 18.3304 50 14.3026 50 14.3026ZM20.3375 30.7074L20.3359 16.7257L33.8453 23.7407L20.3375 30.7074Z" fill="#FF0000"/>
-                                <path d="M20.3375 30.7074L20.3359 16.7257L33.8453 23.7407L20.3375 30.7074Z" fill="white"/>
-                                </g>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_641_839">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Youtube</a>
-                        <a id="cursor" href="https://rutube.ru/channel/32500125/ " class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1147_303)">
-                                <mask id="mask0_1147_303" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="51" height="50">
-                                <path d="M38.3788 0H12.6212C5.92685 0 0.5 5.42685 0.5 12.1212V37.8788C0.5 44.5731 5.92685 50 12.6212 50H38.3788C45.0731 50 50.5 44.5731 50.5 37.8788V12.1212C50.5 5.42685 45.0731 0 38.3788 0Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_1147_303)">
-                                <path d="M50.5 0H0.5V50H50.5V0Z" fill="white"/>
-                                <path d="M50.5 25C64.3072 25 75.5 13.8071 75.5 1.14441e-05C75.5 -13.8071 64.3072 -25 50.5 -25C36.6929 -25 25.5 -13.8071 25.5 1.14441e-05C25.5 13.8071 36.6929 25 50.5 25Z" fill="#ED143B"/>
-                                <path d="M31.3841 23.8585H16.6123V18.0131H31.3841C32.2469 18.0131 32.8469 18.1636 33.148 18.4262C33.4491 18.6888 33.6356 19.1759 33.6356 19.8875V21.9864C33.6356 22.7361 33.4491 23.2233 33.148 23.4859C32.8469 23.7485 32.2469 23.8608 31.3841 23.8608V23.8585ZM32.3975 12.5022H10.3477V37.5H16.6123V29.3672H28.1574L33.6356 37.5H40.6507L34.6108 29.3291C36.8375 28.9991 37.8374 28.3167 38.6621 27.192C39.4867 26.0674 39.9003 24.2693 39.9003 21.8697V19.9953C39.9003 18.5721 39.7495 17.4475 39.4867 16.5855C39.2238 15.7235 38.7745 14.9737 38.1363 14.3003C37.4622 13.6628 36.7117 13.2138 35.8106 12.913C34.9096 12.6504 33.7839 12.5 32.3975 12.5V12.5022Z" fill="#100943"/>
-                                </g>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_1147_303">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Rutube</a>
-                        <a id="cursor" href="https://dzen.ru/id/618213a544229d6bb00940fe " class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_847)">
-                                <path d="M30.3214 29.8214C26.3929 33.875 26.1071 38.9286 25.7679 50C36.0893 50 43.2143 49.9643 46.8929 46.3929C50.4643 42.7143 50.5 35.25 50.5 25.2679C39.4286 25.625 34.375 25.8929 30.3214 29.8214ZM0.5 25.2679C0.5 35.25 0.535714 42.7143 4.10714 46.3929C7.78571 49.9643 14.9107 50 25.2321 50C24.875 38.9286 24.6071 33.875 20.6786 29.8214C16.625 25.8929 11.5714 25.6071 0.5 25.2679ZM25.2321 0C14.9286 0 7.78571 0.0357143 4.10714 3.60714C0.535714 7.28571 0.5 14.75 0.5 24.7321C11.5714 24.375 16.625 24.1071 20.6786 20.1786C24.6071 16.125 24.8929 11.0714 25.2321 0ZM30.3214 20.1786C26.3929 16.125 26.1071 11.0714 25.7679 0C36.0893 0 43.2143 0.0357143 46.8929 3.60714C50.4643 7.28571 50.5 14.75 50.5 24.7321C39.4286 24.375 34.375 24.1071 30.3214 20.1786Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_641_847">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            Яндекс Дзен</a>
-                        <a id="cursor" href="https://vk.com/galileoskyteam" class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_641_852)">
-                                <path d="M4 3.5C0.5 7.03333 0.5 12.6833 0.5 24V26C0.5 37.3 0.5 42.95 4 46.5C7.53333 50 13.1833 50 24.5 50H26.5C37.8 50 43.45 50 47 46.5C50.5 42.9667 50.5 37.3167 50.5 26V24C50.5 12.7 50.5 7.05 47 3.5C43.4667 0 37.8167 0 26.5 0H24.5C13.2 0 7.55 0 4 3.5Z" fill="#0077FF"/>
-                                <path d="M27.1022 36.0169C15.7022 36.0169 9.20221 28.2169 8.93555 15.2169H14.6689C14.8522 24.7502 19.0522 28.7835 22.3855 29.6169V15.2169H27.7689V23.4335C31.0522 23.0835 34.5189 19.3335 35.6856 15.2002H41.0522C40.6146 17.3398 39.7405 19.3662 38.4845 21.1527C37.2284 22.9393 35.6175 24.4476 33.7522 25.5835C35.8338 26.6196 37.672 28.0851 39.1458 29.8835C40.6196 31.6819 41.6954 33.7723 42.3022 36.0169H36.3855C35.1189 32.0669 31.9522 29.0002 27.7689 28.5835V36.0169H27.1189H27.1022Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_641_852">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
-                            ВКонтакте</a>
-                        <a id="cursor" href="https://t.me/galileosky_telematics" class="footerEndBox_text">
-                            <svg class="footerEndIcon" width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_1139_280)">
-                                <path d="M25.5104 50.0208C39.3233 50.0208 50.5208 38.8233 50.5208 25.0104C50.5208 11.1975 39.3233 0 25.5104 0C11.6975 0 0.5 11.1975 0.5 25.0104C0.5 38.8233 11.6975 50.0208 25.5104 50.0208Z" fill="url(#paint0_linear_1139_280)"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8087 24.7394C19.0973 21.5741 23.9495 19.4708 26.3859 18.4504C33.3206 15.5558 34.7783 15.056 35.7154 15.0352C35.9236 15.0352 36.3818 15.0768 36.6941 15.3267C36.944 15.5349 37.0065 15.8057 37.0482 16.0139C37.0898 16.2222 37.1315 16.6595 37.0898 16.9927C36.715 20.9494 35.0906 30.5495 34.2577 34.9644C33.9036 36.8386 33.2164 37.4633 32.55 37.5258C31.0923 37.6507 29.9886 36.5679 28.5934 35.6516C26.3859 34.2147 25.1573 33.3192 23.0123 31.9031C20.5342 30.2788 22.1377 29.3833 23.5538 27.9256C23.9286 27.5508 30.3218 21.7199 30.4467 21.1993C30.4676 21.1368 30.4676 20.8869 30.3218 20.7619C30.176 20.637 29.9678 20.6786 29.8012 20.7203C29.5721 20.7619 26.0736 23.0943 19.2639 27.6965C18.2643 28.3838 17.3689 28.717 16.5567 28.6961C15.6612 28.6753 13.9536 28.1963 12.6625 27.7798C11.1006 27.2801 9.85116 27.0093 9.95529 26.1347C10.0178 25.6766 10.6425 25.2184 11.8087 24.7394Z" fill="white"/>
-                                </g>
-                                <defs>
-                                <linearGradient id="paint0_linear_1139_280" x1="25.4896" y1="0" x2="25.4896" y2="49.6252" gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#2AABEE"/>
-                                <stop offset="1" stop-color="#229ED9"/>
-                                </linearGradient>
-                                <clipPath id="clip0_1139_280">
-                                <rect width="50" height="50" fill="white" transform="translate(0.5)"/>
-                                </clipPath>
-                                </defs>
-                            </svg> 
-                            Telegram</a>
-                    </div>
-                    <img id="cursor" href="https://sk.ru/" class="footerEnd_logo" src="img/sk.svg">
-                </div>
-            </div>
-            
-        </footer>-->
-        <!--Модальные окна-->
-
-         <!--Заказать звонок-->
-        <div class="modal">
-            <div class="modal-box"> 
-                <div class="modalContainer">
-                    <div class="modalClose">
-                        <button id="btnEx" class="modalBtn">
-                            <span class="icon-close-2"></span>
-                        </button>
-                    </div>
-                    <div class="modalInfo">
-                        <div class="modalInfoBox">
-                            <p class="modalTitle">Заказать звонок</p>
-                            <form class="modalForm">
-                                <div class="input_textBlock">
-                                    <input class="modalRow input_decoration" placeholder="Имя" type="text" name="name"></input>
-                                </div>
-                                <div class="input_textBlock">
-                                    <input class="modalRow input_decoration inputPart" placeholder="Телефон" type="tel" name="contact" required></input>
-                                </div>
-                                <div class="input_textBlock">
-                                    <input class="modalRow input_decoration inputPart" placeholder="Комментарий" type="text" name="text"></input>
-                                </div>
-                            </form>
-                            <div class="blockHelpBlock_btnBox">
-                                <button id="cursor" class="btnModal">Отправить</button>
-                                <p class="btnText">Нажимая кнопку &laquo;Отправить&raquo;, 
-                                    я&nbsp;даю <a class="textNextPage" href="https://galileosky.ru/assets/files/docs/soglasie-na-obrabotku-personalnyix-dannyix-(1).pdf">согласие</a> на&nbsp;обработку 
-                                    моих персональных данных 
-                                    и&nbsp;принимаю условия.</p>
-                            </div>
-                        </div>  
-                        <div class="modalInfoBoxTwo">
-                            <p class="modalTitle">Спасибо!</p>
-                            <p class="modalTitle__text textMessageOne">Заявка успешно отправлена.
-                                <br>Наш менеджер перезвонит вам.</br> Менеджеры работают
-                                <br>в&nbsp;будни с&nbsp;6:00 до&nbsp;18:00 Мск</br></p>
-                            <p class="modalTitle__text textMessageTwo">Мы перезвоним вам. <br>Менеджеры работают</br>
-                                по будням с 6:00 до 18:00 Мск</p>
-                        </div> 
-                    </div>
-                </div>
-            <div>
-        </div>
-        <!--Получите тестовый образец-->
-        <div class="modal testSample">
-            <div class="modal-box"> 
-                <div class="modalContainer">
-                    <div class="modalClose">
-                        <button id="btnEx" class="modalBtn">
-                            <span class="icon-close-2"></span>
-                        </button>
-                    </div>
-                    <div class="modalInfo">
-                        <div class="modalInfoBox modalInfoTest">
-                            <p class="modalTitle">Получите тестовый образец</p>
-                            <p class="modalTitle__text">Получите доступ к дилерской цене на терминалы Galileosky</p>
-                            <form class="modalForm">
-                                <div class="input_textBlock">
-                                    <input class="modalRow input_decoration" placeholder="Имя" type="text" name="name"></input>
-                                </div>
-                                <div class="input_textBlock inputTwo">
-                                    <input class="modalRow input_decoration inputPart" placeholder="Телефон" type="tel" name="contact" required></input>
-                                    <input class="modalRow input_decoration inputPart" placeholder="Email" type="email" name="contact" required></input>
-                                </div>
-                                <div class="input_textBlock">
-                                    <input class="modalRow input_decoration inputPart" placeholder="Комментарий" type="text" name="text"></input>
-                                </div>
-                            </form>
-                            <div class="blockHelpBlock_btnBox">
-                                <button id="cursor" class="btnModal blockHelpBlock_button">Отправить</button>
-                                <p class="btnText">Нажимая кнопку &laquo;Отправить&raquo;, 
-                                    я&nbsp;даю <a class="textNextPage" href="https://galileosky.ru/assets/files/docs/soglasie-na-obrabotku-personalnyix-dannyix-(1).pdf">согласие</a> на&nbsp;обработку 
-                                    моих персональных данных 
-                                    и&nbsp;принимаю условия.</p>
-                            </div>
-                        </div>  
-                        <div class="modalInfoBoxTwo modalInfoThanks">
-                            <p class="modalTitle">Спасибо!</p>
-                            <p class="modalTitle__text textMessageOne">Заявка успешно отправлена</p>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/scriptFiles.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/demo.js"></script>
     <script src="js/carosel.js"></script>
     <script src="js/corusel2t.js"></script>
     <script src="js/sliderTerminale.js"></script>
