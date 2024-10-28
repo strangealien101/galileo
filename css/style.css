@@ -514,6 +514,7 @@ ul, li {
   font-size: 30px;
   line-height: 36px;
   color: var(--Arven);
+  border-color: transparent;
   border-radius: 100px;
   background-color: var(--Nazgul);
   box-shadow: 0px 15px 50px 0px rgba(94, 182, 53, 0.5);
@@ -530,8 +531,8 @@ ul, li {
 
 .blockInfoStart_list__box {
   padding: 30px;
-  margin-bottom: 25px;
-  height: 364px;
+  position: relative;
+  height: 100%;
   border: 1px solid var(--Arven);
   border-radius: 20px;
 }
@@ -582,6 +583,7 @@ ul, li {
   font-size: 30px;
   line-height: 36px;
   color: var(--Arven);
+  border-color: transparent;
   background-color: var(--Gorlum);
   border-radius: 100px;
 }
@@ -601,6 +603,7 @@ ul, li {
   font-size: 30px;
   line-height: 36px;
   color: var(--Arven);
+  border-color: transparent;
   background-color: var(--Nazgul);
   border-radius: 100px;
   box-shadow: 0px 15px 50px 0px rgba(94, 182, 53, 0.5);
@@ -625,6 +628,7 @@ ul, li {
 .blockInfoTechnology_block {
   padding: 50px;
   margin-bottom: 25px;
+  position: relative;
   height: 845px;
   border: 1px solid var(--Arven);
   border-radius: 20px;
@@ -654,6 +658,7 @@ ul, li {
    font-size: 26px;
    line-height: 31px;
    color: var(--Arven);
+   border-color: transparent;
    border-radius: 100px;
    background-color: var(--Gorlum);
    box-shadow: 0px 15px 50px 0px rgba(0, 186, 242, 0.5);
@@ -690,6 +695,10 @@ ul, li {
   line-height: 48px;
   font-weight: 500;
   color: var(--Arven);
+}
+
+.blockInfonumbers_spshl {
+  padding-left: 40px;
 }
 
 .line {
@@ -848,7 +857,8 @@ ul, li {
 }
 
 .blockInfoTechnology_company {
-  margin-bottom: 70px;
+  margin-bottom: 7
+  0px;
   display: flex;
   flex-direction: row;
   background-image: url(../img/frame.svg);
@@ -958,6 +968,7 @@ ul, li {
 
 .input_textBlock {
   position: relative;
+  margin-bottom: 30px;
 }
 
 .input_decoration{
@@ -973,6 +984,7 @@ ul, li {
   line-height: 36px;
   color: var(--Arven);
   border-radius: 100px;
+  border-color: transparent;
   background-color: var(--Nazgul);
 }
 
@@ -990,10 +1002,9 @@ ul, li {
   padding-top: 50px;
 }
 
-.inputOne {
-  height: 105px;
+.containerHelp {
+  padding-top: 90px;
 }
-
 
 
 /* Новости и статьи */
@@ -1291,6 +1302,7 @@ ul, li {
   border-color: var(--Arven);
   border-style: solid;
   border-radius: 20px 20px 0px 0px;
+  border-bottom: none;
 }
 
 
@@ -1707,6 +1719,7 @@ ul, li {
     line-height: 36px;
     color: var(--Arven);
     border-radius: 100px;
+    border-color: transparent;
     background-color: var(--Nazgul);
     cursor: pointer;
 }
@@ -1731,6 +1744,7 @@ ul, li {
     padding: 20px;
     border-radius: 100px;
     background-color: var(--Gorlum);
+    border-color: transparent;
 }
 
 .btnBigBlue_text {
@@ -1857,6 +1871,8 @@ ul, li {
 .blockInfonumbers {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .blockInfoTechnology_list {

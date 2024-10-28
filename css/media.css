@@ -39,6 +39,11 @@
         font-size: 24px;
         line-height: 28px;
     }
+
+    .blockInfoTechnology_block {
+        position: relative;
+        height: 630px;
+    }
 }
 
 
@@ -93,7 +98,6 @@
     }
 
     .blockInfoTechnology_block {
-        height: 630px;
         background-size: 462px 348px;
     }
 
@@ -120,8 +124,6 @@
     .btnBigGreen, .btnBigGreenTwo {
         padding: 24px 0 24px 0;
     }
-
-
 
     .blockInfoTechnology_ttl {
         font-size: 34px;
@@ -188,11 +190,6 @@
         font-size: 26px;
         line-height: 31px;
     }
-
-   
-
-    
-
 }
 
 @media (max-width:1500px) {
@@ -258,6 +255,14 @@
     .menu_open {
         width: 170px;
         margin-left: -27px;
+    }
+
+    .blockImg_center {
+        width: 1000px;
+    }
+
+    .blockImg_box {
+        width: 238px;
     }
 }
 
@@ -384,7 +389,20 @@
         width: 305px;
     }
 
+    .blockInfonumbers_spshl {
+        padding-left: 0;
+    }
+}
 
+@media (max-width:1400px) {
+
+    .blockInfo {
+        margin-bottom: 25px;
+    }
+
+    .blockInfoStart_list__box {
+        background-size: 118px !important;
+    }
 }
 
 @media (max-width:1396px) {
@@ -407,8 +425,6 @@
     .headerBlock_logo__img {
         width: 260px;
     }
-
-
 }
 
 @media (max-width:1362px) {
@@ -546,7 +562,7 @@
     }
 
     .footerEndBox {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -714,8 +730,6 @@
         margin-top: 25px;
     }
 
-  
-
     .btnModal {
         margin-bottom: 20px;
         width: 100%;
@@ -744,10 +758,6 @@
     .titleBlue {
         font-size: 20px;
         line-height: 24px;
-    }
-
-    .blockInfoStart_list__box {
-        height: 300px;
     }
 
     .blockInfoStart_list__item {
@@ -799,12 +809,20 @@
         padding: 70px 0 70px 0;
     }
 
+    .blockInfoTechnology_block {
+        height: 100%;
+        background-size: 300px !important;
+    }
+
+    .blockTechnology {
+        margin-bottom: 25px;
+    }
+
+
+
 }
 
 @media (max-width:768px) {
-    .blockInfoStart_list__box {
-        height: 151px;
-    }
 
     .blockInfoStart_list__item {
         height: 151px;
@@ -821,10 +839,6 @@
 
     .blockInfoTechnology_ttl {
         display: none;
-    }
-
-    .marquee-content {
-        height: 160px;
     }
 
     .footerInfoTitle {
@@ -877,13 +891,11 @@
     .blockImg_center {
         width: 500px;
     }
-
-    
+   
 }
 
 
 @media (max-width:680px) {
-
     .blockInfoTechnology_title {
         font-size: 34px;
         line-height: 37px;
@@ -903,11 +915,13 @@
     }
 
     .blockHelpBlock_btn {
+        padding: 0;
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
         font-size: 20px;
         line-height: 24px;
+        height: 60px;
     }
 
     .blockInfoTechnology_list {
@@ -945,6 +959,16 @@
     .blockHelpBlock_btnBox__text {
         text-align: center;
     }
+
+    .blockInfoTechnology_block {
+        background-size: 250px !important;
+    }
+}
+
+@media (max-width:651px) {
+    .blockInfoTechnology_block:not(:last-child) {
+    background-size: 260px !important;
+}
 }
 
 @media (max-width:570px) {
@@ -1019,10 +1043,6 @@
         line-height: 21px;
     }
 
-    .blockInfoTechnology_block {
-        height: 400px;
-    }
-
     .blockInfonumbers_text {
         font-size: 20px;
         line-height: 20px;
@@ -1044,11 +1064,23 @@
     .containerBox {
         margin-bottom: 0;
     }
+
+    .containerAnother {
+        padding-top: 40px;
+    }
+
+    .numberBox {
+        padding-top: 40px;
+    }
 }
 
 @media (max-width:480px) {
     .headerBlock_logo__img {
         max-width: 193px;
+    }
+
+    .blockInfoTechnology_block {
+        height: 400px;
     }
 
 

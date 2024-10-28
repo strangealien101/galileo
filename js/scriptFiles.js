@@ -18,8 +18,7 @@ document.querySelector(".icon-Frame-826").addEventListener("click", function () 
     /*слайдер*/
 let swiper = new Swiper('.swiper', {
     direction: 'horizontal',
-    loop: true,
-    rewind: true,
+   
   
   navigation: {
     nextEl: '.swiper-button-next',
